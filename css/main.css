@@ -113,7 +113,7 @@ a {
 #navigation>ul {
 	padding:0;
 	margin:0;
-	text-align:justify;
+	/*text-align:justify;*/
 }
 
 #navigation>ul:after {
@@ -130,10 +130,15 @@ a {
 	padding-bottom:10px;
 }
 
+#navigation>ul>li.active {
+	font-weight: bold;
+}
+
 #navigation>ul>li>a {
 	text-decoration:none;
 	color:#333;
 	border-bottom:1px solid #333;
+	margin: 0 20px;
 }
 
 #navigation ul li ul {
@@ -188,13 +193,13 @@ a {
 }
 
 #main a {
-	color:#a00;
-	border-bottom:1px dotted #a00;
+	color:#fafafa;
+	border-bottom:1px dotted #ccc;
 	text-decoration:none;
 }
 
 #main a:hover {
-	color:#700;
+	color:#ccc;
 	border-bottom:1px dotted #700;
 }
 
@@ -227,7 +232,7 @@ a {
 	max-width:960px;
 	margin:0 auto;
 	color:#EEE;
-	padding:40px 0 120px;
+	padding:40px 0 40px;
 	font-size:14px;
 	overflow:hidden;
 	border-bottom:1px dashed #EEE;
@@ -314,7 +319,7 @@ a {
 	content:" \2219";
 }
 
-#fall-about-section p, #spring-about-section p, #spring-contest-section p, #summer-about-section p, #summer-content-section p {
+#fall-about-section p, #spring-about-section p, #spring-contest-section p, #summer-registration-section p, #summer-content-section p, #summer-contact-section p {
 	max-width:720px;
 }
 
@@ -395,6 +400,71 @@ a {
 }
 
 .footer-credit p {
-	font-size:14px;
+	font-size:12px;
 	line-height:24px;
+}
+
+ul.sections { 
+	display: block;
+	text-align: center;
+}
+
+ul.sections li {
+	color: #aaa;
+	font-family:"Merriweather", serif;
+	font-size: 20px;
+	font-weight:400;
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+ul.sections li.active {
+	color: #fff;
+}
+
+.section-content table {
+	display: none;
+	border: none;
+	margin: 0 auto;
+	width: 70%;
+}
+
+.section-content table.active {
+	display: table;
+}
+
+.section-content table td:first-child {
+	border-right: 1px solid #aaa;
+	border-collapse: collapse;
+	color: #fff;
+	font-size: 18px;
+	text-align: right;
+	width: 40%;
+}
+
+.section-content table td {
+	color: #aaa;
+	padding: 18px 8px;
+}
+
+blockquote {
+	position: relative;
+}
+
+blockquote:before, blockquote:after {
+	font-size: 36px;
+	position: absolute;
+}
+
+blockquote:before {
+	content: '“';
+	left: -20px;
+	top: -10px;
+}.
+blockquote:after {
+	content: '”';
+	left: 20px;
+	top: 10px;
 }

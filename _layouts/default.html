@@ -19,34 +19,7 @@
                     </div>
                     <p><em>{{ site.address|newline_to_br }}</em></p>
                     <div id="navigation">
-                        <ul>
-                            <li><a href="/fall/">Fall Journalism Conference</a>
-                                <ul>
-                                    <li><a href="/fall/">About</a></li>
-                                    <li><a href="/fall/registration/">Registration</a></li>
-                                    <li><a href="/fall/content/">Content</a></li>
-                                    <li><a href="/fall/logistics/">Logistics</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="/spring/">Spring Journalism Conference</a>
-                                <ul>
-                                    <li><a href="/spring/">About</a></li>
-                                    <li><a href="/spring/registration/">Registration</a></li>
-                                    <li><a href="/spring/content/">Content</a></li>
-                                    <li><a href="/spring/contest/">Journalism Contest</a></li>
-                                    <li><a href="/spring/logistics/">Logistics</a></li>
-                                </ul>                                
-                            </li>
-                            <li><a href="/summer/">Summer Journalism Academy</a>
-                                <ul>
-                                    <li><a href="/summer/">About</a></li>
-                                    <li><a href="/summer/registration/">Registration</a></li>
-                                    <li><a href="/summer/content/">Content</a></li>
-                                    <li><a href="/summer/logistics/">Logistics</a></li>
-                                </ul>                                                                
-                            </li>
-                            <li><a href="/contact/">Contact Us</a></li>
-                        </ul>                
+                        {% include pages.html %}                
                     </div>
                 </div>
             </div>
@@ -59,28 +32,23 @@
                 <div class="footer-inner">
                     <div class="footer-section">
                         <h2>Contact Us</h2>
-                        <p>(617) 576-6600<br/><a href="mailto:conference@thecrimson.com">conference@thecrimson.com</a></p>
+                        <p>{{ site.phone }}<br/><a href="mailto:conference@thecrimson.com">{{ site.email }}</a></p>
                         <h2 class="footer-title">Address</h2>
                         {{ site.address | newline_to_br }}</p>
                     </div>
                     <div class="footer-section directors">
                         <h2>Coordinators</h2>
-                        <p>
-                            LuShuang Xu
-                            <br/><em>Journalism Conference Director</em>
-                        </p>
-                        <p>
-                            Kevin Wu
-                            <br/><em>Journalism Conference Content Director</em>
-                        </p>
-                        <p>
-                            Maya Jonas-Silver
-                            <br/><em>Summer Journalism Academy Director</em>
-                        </p>
+                        {% for coordinator in site.coordinators %}
+                            <p>
+                                {{ coordinator.name }}
+                                <br />
+                                <em>{{ coordinator.position }}</em>
+                            </p>
+                        {% endfor %}
                     </div>
                     <div class="footer-credit">
                         <p>
-                            Copyright 2013 <a href="http://www.thecrimson.com"><em>The Harvard Crimson</em></a>
+                            Copyright {{ site.time | date: "%Y" }} <a href="http://www.thecrimson.com"><em>The Harvard Crimson</em></a>
                             <br/>Site design by <a href="http://www.angelaconstance.com">Angela Li</a>
                             <br/>Photos courtesy of <a href="http://www.deanshu.com/">Dean Shu</a>
                         </p>
