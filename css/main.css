@@ -1,0 +1,400 @@
+/* =============================================================== LESS SETUP */
+.border-box {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+.first {
+	float:left;
+	width:45%;
+}
+
+.second {
+	float:right;
+	width:45%;
+}
+
+img {
+	border:0;
+}
+
+body, html {
+	width:100%;
+	min-height:100%;
+	min-width: 960px;
+	margin:0;
+	padding:0;
+	position:relative;
+	font-family:"Open Sans", sans-serif;
+	background:url("../assets/bg_main.jpg") fixed;
+}
+
+a {
+	-webkit-transition:all .3s;
+	-moz-transition:all .3s;
+	-o-transition:all .3s;
+	transition:all .3s;
+}
+
+#wrapper {
+	min-height:100%;
+	position:relative;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+::selection {
+	background:#700;
+	color:#EEE;
+	text-shadow:none;
+}
+
+#header {
+	background:url("../assets/bg_header.png") fixed;
+	text-shadow:-1px -1px 0 #eee;
+}
+
+.header-inner {
+	max-width:960px;
+	margin:0 auto;
+	padding:30px 20px 10px;
+	overflow:hidden;
+}
+
+.header-inner img {
+	width:100px;
+	float:left;
+}
+
+.header-inner p {
+	height:70px;
+	border-right:2px solid #700;
+	margin-top:16px;
+	padding:20px 10px 0 0;
+	float:right;
+	text-align:right;
+	color:#700;
+	font-family:Georgia, serif;
+}
+
+#title {
+	float:left;
+	margin:16px 0 0 20px;
+}
+
+#title h1, #title h2 {
+	margin:0;
+}
+
+#title h1 a, #title h2 a {
+	color:#700;
+	text-decoration:none;
+}
+
+#title h1 {
+	font-family:Georgia;
+	font-weight:400;
+	font-size:40px;
+}
+
+#title h2 {
+	text-transform:uppercase;
+	font-size:18px;
+}
+
+#navigation {
+	max-width:960px;
+	margin:0 auto;
+	clear:both;
+	padding-top:10px;
+}
+
+#navigation>ul {
+	padding:0;
+	margin:0;
+	text-align:justify;
+}
+
+#navigation>ul:after {
+	height:0;
+	content:"";
+	display:inline-block;
+	width:100%;
+}
+
+#navigation>ul>li {
+	display:inline-block;
+	font-family:"Merriweather", serif;
+	font-size:18px;
+	padding-bottom:10px;
+}
+
+#navigation>ul>li>a {
+	text-decoration:none;
+	color:#333;
+	border-bottom:1px solid #333;
+}
+
+#navigation ul li ul {
+	opacity:0;
+	position:absolute;
+	top:198px;
+	min-width:180px;
+	z-index:100;
+	list-style:none;
+	padding:0;
+	-webkit-transition:all .3s;
+	-moz-transition:all .3s;
+	-o-transition:all .3s;
+	transition:all .3s;
+}
+
+#navigation ul li ul a {
+	text-decoration:none;
+	color:#333;
+	text-shadow:none;
+	font-family:"Open Sans", sans-serif;
+	text-transform:uppercase;
+	font-size:12px;
+}
+
+#navigation ul li ul li a {
+	display:block;
+	padding:8px 12px;
+	background:#333;
+	color:#EEE;
+	font-weight:600;
+	border-bottom:0!important;
+}
+
+#navigation ul li ul li a:hover {
+	background:#700;
+	color:#EEE;
+}
+
+#navigation ul li:hover>a {
+	color:#999;
+	border-bottom:1px solid #999;
+}
+
+#navigation ul li:hover ul {
+	opacity:.9;
+}
+
+#main {
+	position:relative;
+	padding-bottom:300px;
+}
+
+#main a {
+	color:#a00;
+	border-bottom:1px dotted #a00;
+	text-decoration:none;
+}
+
+#main a:hover {
+	color:#700;
+	border-bottom:1px dotted #700;
+}
+
+.intro {
+	position:relative;
+	max-height: 400px;
+	overflow: hidden;
+}
+
+.intro img {
+	width:100%;
+}
+
+.intro-text {
+	display:none;
+	position:absolute;
+	z-index:50;
+	background:rgba(0, 0, 0, .8);
+	color:#EEE;
+	font-size:20px;
+	padding:10px 20px;
+	font-family:"Merriweather", serif;
+}
+
+.intro-text p {
+	margin:0;
+}
+
+.main {
+	max-width:960px;
+	margin:0 auto;
+	color:#EEE;
+	padding:40px 0 120px;
+	font-size:14px;
+	overflow:hidden;
+	border-bottom:1px dashed #EEE;
+}
+
+.main h2 {
+	font-weight:400;
+	font-family:"Merriweather", serif;
+}
+
+.register {
+	margin-top:60px;
+}
+
+.register a {
+	display:inline-block;
+	background:rgba(180, 0, 0, .4);
+	color:#EEE!important;
+	padding:10px 20px;
+	text-decoration:none;
+	border:0!important;
+}
+
+.register a:hover {
+	background:rgba(200, 0, 0, .4);
+}
+
+#home-section .home-blurb {
+	margin-bottom:40px;
+}
+
+#home-section .home-blurb h2 {
+	font-size:40px;
+}
+
+#home-section .home-blurb p {
+	font-size:14px;
+	line-height:26px;
+	font-family:"Open Sans", sans-serif;
+	text-transform:uppercase;
+	font-weight:600;
+}
+
+#home-section .home-testimonials, #home-section .home-crimson {
+	margin-bottom:40px;
+}
+
+#home-section .home-testimonials {
+	float:left;
+	width:45%;
+}
+
+#home-section .home-crimson {
+	float:right;
+	width:45%;
+}
+
+#home-section .home-attendees {
+	clear:both;
+	background:rgba(255, 255, 255, .1);
+	padding:10px 20px;
+}
+
+#home-section .home-attendees h2 {
+	padding-top:0;
+	color:#CCC;
+}
+
+#home-section .home-attendees ul {
+	list-style:none;
+	padding:0;
+}
+
+#home-section .home-attendees ul li {
+	color:#CCC;
+	display:inline-block;
+	font-size:12px;
+	line-height:20px;
+	font-weight:600;
+	text-transform:uppercase;
+}
+
+#home-section .home-attendees ul li:after {
+	content:" \2219";
+}
+
+#fall-about-section p, #spring-about-section p, #spring-contest-section p, #summer-about-section p, #summer-content-section p {
+	max-width:720px;
+}
+
+#spring-contest-section ul {
+	list-style-type:square;
+}
+
+#summer-logistics-section p {
+	max-width:720px;
+}
+
+#summer-logistics-section ul {
+	list-style-type:square;
+}
+
+#summer-logistics-section ul em {
+	font-style:normal;
+}
+
+#summer-logistics-section ul li {
+	margin-bottom:10px;
+}
+
+#footer {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	color:#EEE;
+}
+
+#footer p {
+	margin:0;
+}
+
+#footer a {
+	color:#EEE;
+	text-decoration:none;
+	border-bottom:1px dotted #EEE;
+}
+
+#footer a:hover {
+	color:#BBB;
+	border-bottom:1px dotted #BBB;
+}
+
+.footer-inner {
+	max-width:960px;
+	margin:0 auto;
+	padding:40px;
+	overflow:hidden;
+}
+
+.footer-section {
+	float:left;
+	margin-right:80px;
+}
+
+.footer-section h2 {
+	font-family:"Merriweather", serif;
+	font-weight:400;
+	margin:0 0 6px 0;
+}
+
+.footer-section .footer-title {
+	margin-top:40px;
+}
+
+.footer-section p {
+	font-size:14px;
+}
+
+.directors p {
+	margin-bottom:20px!important;
+}
+
+.footer-credit {
+	float:right;
+}
+
+.footer-credit p {
+	font-size:14px;
+	line-height:24px;
+}
