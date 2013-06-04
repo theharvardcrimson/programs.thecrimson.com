@@ -1,0 +1,17 @@
+<div id="header-top" class="row">
+    <a id="logo" href="/">
+        <img alt="Harvard Crimson Seal" src="/assets/logo.png" height="90" width="90" />
+    </a>
+
+    <div id="title">
+        <h1><a href="/">{{ site.organization }}</a></h1>
+        <h2><a href="/">{{ site.name }}</a></h2>
+    </div>
+
+    <div id="address">
+        {{ site.address|newline_to_br }}
+    </div>
+</div>
+<div id="navigation" class="row">
+    {% include pages.html %}
+</div>

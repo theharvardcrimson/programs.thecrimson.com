@@ -1,0 +1,32 @@
+<div class="footer-section">
+    <h2>Contact Us</h2>
+    <p>
+        {{ site.phone }}
+        <br><a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </p>
+    
+    <h2 class="footer-title">Address</h2>
+    <p>
+        {{ site.address | newline_to_br }}
+    </p>
+</div>
+
+<div class="footer-section">
+    <h2>Coordinators</h2>
+    {% for coordinator in site.coordinators %}
+        <p>
+            {{ coordinator.name }}
+            <br />
+            <em>{{ coordinator.position }}</em>
+        </p>
+    {% endfor %}
+</div>
+
+<div class="footer-section footer-credit">
+    <p>
+        Copyright {{ site.time | date: "%Y" }}
+        <a href="http://www.thecrimson.com"><em>The Harvard Crimson</em></a>
+        <br>Site design by <a href="http://www.angelaconstance.com">Angela Li</a>
+        <br>Photos courtesy of <a href="http://www.deanshu.com/">Dean Shu</a>
+    </p>
+</div>  

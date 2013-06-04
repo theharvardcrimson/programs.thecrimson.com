@@ -1,8 +1,8 @@
 organization: The Harvard Crimson
 name: Summer Journalism Academy
-address: "14 Plympton Street\nCambridge, MA"
+address: "14 Plympton Street\nCambridge, MA 02138"
 phone: (617) 576-6600
-email: conference@thecrimson.com
+email: academy@thecrimson.com
 pygments: true
 
 coordinators:
@@ -10,5 +10,5 @@ coordinators:
     position: Summer Journalism Academy Coordinator
   - name: Madeline Conway
     position: Summer Journalism Academy Director
-  - name: Robert Samuels
+  - name: Bobby Samuels
     position: Harvard Crimson President
