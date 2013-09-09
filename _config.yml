@@ -1,14 +1,14 @@
 organization: The Harvard Crimson
-name: Summer Journalism Academy
+name: Journalism Conference
 address: "14 Plympton Street\nCambridge, MA 02138"
 phone: (617) 576-6600
-email: academy@thecrimson.com
+email: conference@thecrimson.com
 pygments: true
 
 coordinators:
-  - name: Maya Jonas-Silver
-    position: Summer Journalism Academy Coordinator
-  - name: Madeline Conway
-    position: Summer Journalism Academy Director
+  - name: LuShuang Xu
+    position: Conference Director
+  - name: Kerry Flynn
+    position: Content Director 
   - name: Bobby Samuels
     position: Harvard Crimson President
