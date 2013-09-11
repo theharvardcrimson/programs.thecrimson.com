@@ -524,6 +524,17 @@ form .radio-choices .radio {
     margin: 0 0 12px 12px;
 }
 
+div#pricebox {
+	color: #FFFFFF;
+	font-weight: bolder;
+	font-family: "Merriweather", serif;
+	font-size: 1.3em;
+	display: inline;
+	padding: 2px 5px;
+	position: relative;
+	top: -5px;
+}
+
 iframe {
 	display: block;
 	border: 0;
