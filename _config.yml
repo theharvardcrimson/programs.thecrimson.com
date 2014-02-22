@@ -1,14 +1,14 @@
 organization: The Harvard Crimson
-name: Journalism Conference
+name: High School Journalism Portal
 address: "14 Plympton Street\nCambridge, MA 02138"
 phone: (617) 576-6600
 email: conference@thecrimson.com
 pygments: true
 
 coordinators:
-  - name: LuShuang Xu
+  - name: Samir Gupta
     position: Conference Director
-  - name: Kerry Flynn
+  - name: Dev Patel
     position: Content Director 
-  - name: Bobby Samuels
+  - name: Samuel Weinstock
     position: Harvard Crimson President

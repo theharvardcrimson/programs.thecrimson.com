@@ -91,23 +91,28 @@ a {
 
 #navigation {
 	overflow: hidden;
+	padding: 0 0 5px;
+}
+
+#subnavigation {
+	overflow: hidden;
 	padding: 0 0 15px;
 }
 
-#navigation ul {
+#navigation ul, #subnavigation ul {
 	margin: 0;
 	padding: 0;
 	text-align: center;
 }
 
-#navigation ul li {
+#navigation ul li, #subnavigation ul li {
 	display: inline-block;
 	font-family: "Merriweather", serif;
 	font-size: 18px;
 	padding-bottom: 10px;
 }
 
-#navigation ul li.active a {
+#navigation ul li.active a, #subnavigation ul li.active a {
 	font-weight: bold;
 }
 
@@ -116,6 +121,22 @@ a {
 	color: #333;
 	margin: 0 20px;
 	text-decoration: none;
+}
+
+#subnavigation {
+	height: 20px;
+	padding-top: 5px;
+	background-color: #700;
+	width: 100%;
+	max-width: none;
+}
+
+#subnavigation ul li a {
+	/*border-bottom: 1px solid #333;*/
+	color: #fff;
+	margin: 0 20px;
+	text-decoration: none;
+	text-shadow: none;
 }
 
 #main {
@@ -164,7 +185,7 @@ a {
 	text-transform: uppercase;
 }
 
-#home-section .home-testimonials, #home-section .home-crimson {
+#home-section .home-testimonials, #home-section .home-crimson, #home-section .sub-testimonials {
 	margin-bottom:40px;
 }
 
@@ -176,6 +197,11 @@ a {
 #home-section .home-crimson {
 	float:right;
 	width:45%;
+}
+
+#home-section .sub-testimonials {
+	float:left;
+	width:90%;
 }
 
 .featured {
@@ -540,4 +566,96 @@ iframe {
 	border: 0;
 	margin: 50px auto 40px;
 	overflow: hidden;
+}
+
+
+/* AWARDS */
+
+/* HEADER */
+
+#title h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+#title p {
+    text-align: center;
+}
+
+/* CATEGORIES */
+
+#categories {
+    font-size: 18px;
+    width: 250px;
+    float: left;
+}
+
+#categories li {
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+#categories li:hover {
+    color: #CCC;
+}
+
+#categories .multi.active:hover {
+    color: #EEE;
+}
+
+.multi {
+    list-style: none;
+    margin-left: -1.2em;
+}
+
+.multi:before {
+    position: relative;
+    display: inline-block;
+    content: "";
+    height: 0;
+    width: 0;
+
+    border-top: .4em solid rgba(0, 0, 0, 0);
+    border-bottom: .4em solid rgba(0, 0, 0, 0);
+    border-left: .5em solid #EEEEEE;
+    border-right: .5em solid rgba(0, 0, 0, 0);
+}
+
+.multi.active:before {
+    top: .34em;
+
+    border-left: .4em solid rgba(0, 0, 0, 0);
+    border-right: .4em solid rgba(0, 0, 0, 0);
+    border-bottom: .5em solid rgba(0, 0, 0, 0);
+    border-top: .5em solid #EEEEEE;
+}
+
+.multi ul {
+    margin-bottom: 0;
+    display: none;
+}
+
+.multi.active ul {
+    display: block;
+}
+
+
+/* FORM */
+
+.application {
+    float: left;
+    display: none;
+}
+
+.application.active {
+    display: block;
+}
+
+#application-section iframe, 
+#awards-contact-section iframe {
+    width: 700px;
+    height: 1200px;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, .02);
 }

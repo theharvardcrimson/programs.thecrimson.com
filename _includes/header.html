@@ -15,3 +15,8 @@
 <div id="navigation" class="row">
     {% include pages.html %}
 </div>
+{% if page.url != "/index.html" %}
+<div id="subnavigation" class="row">
+    {% include subpages.html %}
+</div>
+{% endif %}

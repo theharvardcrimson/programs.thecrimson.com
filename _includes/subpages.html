@@ -1,0 +1,61 @@
+<ul>
+    {% if page.url contains "/fall/" %}
+    <li {% if page.url == "/fall/index.html" %}class="active"{% endif %}>
+        <a href="/fall/">About</a>
+    </li>
+    <li {% if page.url == "/fall/programming/index.html" %}class="active"{% endif %}>
+        <a href="/fall/programming/">Programming</a>
+    </li>
+    <li {% if page.url == "/fall/registration/index.html" %}class="active"{% endif %}>
+        <a href="/fall/registration/">Dates and Registration</a>
+    </li>
+    <li {% if page.url == "/fall/contact/index.html" %}class="active"{% endif %}>
+        <a href="/fall/contact/">Contact and Directions</a>
+    </li>
+    {% endif %}
+
+    {% if page.url contains "/spring/" %}
+    <li {% if page.url == "/spring/index.html" %}class="active"{% endif %}>
+        <a href="/spring/">About</a>
+    </li>
+    <li {% if page.url == "/spring/programming/index.html" %}class="active"{% endif %}>
+        <a href="/spring/programming/">Programming</a>
+    </li>
+    <li {% if page.url == "/spring/registration/index.html" %}class="active"{% endif %}>
+        <a href="/spring/registration/">Dates and Registration</a>
+    </li>
+    <li {% if page.url == "/spring/contact/index.html" %}class="active"{% endif %}>
+        <a href="/spring/contact/">Contact and Directions</a>
+    </li>
+    {% endif %}
+
+    {% if page.url contains "/summer/" %}
+    <li {% if page.url == "/summer/index.html" %}class="active"{% endif %}>
+        <a href="/summer/">About</a>
+    </li>
+    <li {% if page.url == "/summer/programming/index.html" %}class="active"{% endif %}>
+        <a href="/summer/programming/">Programming</a>
+    </li>
+    <li {% if page.url == "/summer/registration/index.html" %}class="active"{% endif %}>
+        <a href="/summer/registration/">Dates and Registration</a>
+    </li>
+    <li {% if page.url == "/summer/contact/index.html" %}class="active"{% endif %}>
+        <a href="/summer/contact/">Contact and Directions</a>
+    </li>
+    {% endif %}
+
+    {% if page.url contains "/awards/" %}
+    <li {% if page.url == "/awards/index.html" %}class="active"{% endif %}>
+        <a href="/awards/">About</a>
+    </li>
+    <li {% if page.url == "/awards/categories/index.html" %}class="active"{% endif %}>
+        <a href="/awards/categories/">Award Categories</a>
+    </li>
+    <li {% if page.url == "/awards/apply/index.html" %}class="active"{% endif %}>
+        <a href="/awards/apply/">Apply</a>
+    </li>
+    <li {% if page.url == "/awards/subscribe/index.html" %}class="active"{% endif %}>
+        <a href="/awards/subscribe/">Subscribe &amp; Contact</a>
+    </li>
+    {% endif %}
+</ul>
