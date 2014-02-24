@@ -11,8 +11,8 @@ president:
   email: president@thecrimson.com
 
 managingeditor:
-  - name: Nicholas Fandos
-  - email: managingeditor@thecrimson.com
+  name: Nicholas Fandos
+  email: managingeditor@thecrimson.com
 
 coordinators:
   - name: Samir Gupta
