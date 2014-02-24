@@ -2,47 +2,16 @@
     <li {% if page.url == "/index.html" %}class="active"{% endif %}>
         <a href="/">Home</a>
     </li>
-    <li {% if page.url == "/fall/index.html" %}class="active"{% endif %}>
-        <a href="/fall/">Fall Conference</a>
-    </li>
-    <li {% if page.url == "/spring/index.html" %}class="active"{% endif %}>
+    <li {% if page.url contains "/spring/" %}class="active"{% endif %}>
         <a href="/spring/">Spring Conference</a>
     </li>
-    <li {% if page.url == "/summer/index.html" %}class="active"{% endif %}>
+    <li {% if page.url contains "/fall/" %}class="active"{% endif %}>
+        <a href="/fall/">Fall Conference</a>
+    </li>
+    <li {% if page.url contains "/summer/" %}class="active"{% endif %}>
         <a href="/summer/">Summer Academy</a>
     </li>
-    <li {% if page.url == "/awards/index.html" %}class="active"{% endif %}>
+    <li {% if page.url contains "/awards/" %}class="active"{% endif %}>
         <a href="/awards/">Journalism Awards</a>
     </li>
-    <!--
-    <li {% if page.url contains "/summer/" %}class="active"{% endif %}>
-        <a href="/summer/">Summer Journalism Academy</a>
-        <ul>
-            <li><a href="/summer/">About</a></li>
-            <li><a href="/summer/registration/">Registration</a></li>
-            <li><a href="/summer/content/">Content</a></li>
-            <li><a href="/summer/logistics/">Logistics</a></li>
-        </ul>                                                                
-    </li>
-    <li {% if page.url contains "/spring/" %}class="active"{% endif %}>
-        <a href="/spring/">Spring Journalism Conference</a>
-        <ul>
-            <li><a href="/spring/">About</a></li>
-            <li><a href="/spring/registration/">Registration</a></li>
-            <li><a href="/spring/content/">Content</a></li>
-            <li><a href="/spring/contest/">Journalism Contest</a></li>
-            <li><a href="/spring/logistics/">Logistics</a></li>
-        </ul>                                
-    </li>
-    <li {% if page.url contains "/fall/" %}class="active"{% endif %}>
-        <a href="/fall/">Fall Journalism Conference</a>
-        <ul>
-            <li><a href="/fall/">About</a></li>
-            <li><a href="/fall/registration/">Registration</a></li>
-            <li><a href="/fall/content/">Content</a></li>
-            <li><a href="/fall/logistics/">Logistics</a></li>
-        </ul>
-    </li>
-    <li><a href="/contact/">Contact Us</a></li>
-    -->
 </ul>

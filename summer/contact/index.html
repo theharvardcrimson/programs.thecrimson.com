@@ -13,18 +13,19 @@ title: Contact and Location | Summer Journalism Conference
     <div class="main">
     	<div class="first">
 	        <h2>Contact</h2>
-	        Maya Jonas-Silver<br />
-			<em>Summer Journalism Academy Coordinator</em><br />
-			<a href="mailto:mayajonas-silver@college.harvard.edu">mayajonas-silver@college.harvard.edu</a><br />
-			(617) 578-6600<br /><br />
-
-			Madeline Conway<br />
-			<em>Summer Journalism Academy Director</em><br />
-			<a href="mconway@college.harvard.edu">mconway@college.harvard.edu</a><br /><br />
-
-			Bobby Samuels<br />
-			<em>Harvard Crimson President</em><br />
-			<a href="robertsamuels@college.harvard.edu">robertsamuels@college.harvard.edu</a><br />
+            {% for coordinator in site.academy.coordinators %}
+            {{ coordinator.name }}<br />
+            <em>{{ coordinator.position }}</em><br />
+            <a href="mailto:{{ coordinator.email }}">{{ coordinator.email }}</a><br />
+            {% if coordinator.phone %}
+                {{ coordinator.phone }}<br /><br />
+            {% else %}
+                <br />
+            {% endif %}
+            {% endfor %}
+            {{ site.president.name }}<br />
+            <em>{{ site.president.position }}</em><br />
+            <a href="mailto:{{ site.president.email }}">{{ site.president.email }}</a><br /><br />
 		</div>
 
 		<div class="second">

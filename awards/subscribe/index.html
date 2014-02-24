@@ -10,28 +10,26 @@ title: Contact | Journalism Awards
 
     <div class="main contact">
         <div class="first">
-            <h2>Contact</h2>Patrick Liu<br>
-            <em>Awards Program Coordinator</em><br>
-            <a href="mailto:patrick.liu@thecrimson.com">patrick.liu@thecrimson.com</a><br>
-            (617) 576-6600<br>
-            <br>
-            Matthew Clarida<br>
-            <em>Content Director</em><br>
-            <a href="mailto:matthew.clarida@thecrimson.com">matthew.clarida@thecrimson.com</a><br>
-            <br>
-            Steven Watros<br>
-            <em>Content Director</em><br>
-            <a href="mailto:steven.watros@thecrimson.com">steven.watros@thecrimson.com</a><br>
-            <br>
-            Samuel Weinstock<br>
-            <em>President</em><br>
-            <a href="mailto:president@thecrimson.com">president@thecrimson.com</a><br>
+            <h2>Contact</h2>
+            {% for coordinator in site.awards.coordinators %}
+            {{ coordinator.name }}<br />
+            <em>{{ coordinator.position }}</em><br />
+            <a href="mailto:{{ coordinator.email }}">{{ coordinator.email }}</a><br />
+            {% if coordinator.phone %}
+                {{ coordinator.phone }}<br /><br />
+            {% else %}
+                <br />
+            {% endif %}
+            {% endfor %}
+            {{ site.president.name }}<br />
+            <em>{{ site.president.position }}</em><br />
+            <a href="mailto:{{ site.president.email }}">{{ site.president.email }}</a><br /><br />
         </div>
 
         <div class="second">
             <h2>Stay up-to date.</h2>
 
-            <p>Submissions are now open!</p><iframe src="form.html" width="720" height="1580" scrolling="no"></iframe>
+            <p>Submissions are now open!</p><iframe src="form.html" width="720" height="900" scrolling="no"></iframe>
         </div>
     </div>
 </div>

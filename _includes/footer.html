@@ -1,8 +1,18 @@
+{% if page.url contains "/fall/" or page.url contains "/spring/" %}
+    {% assign context = site.conference %}
+{% elsif page.url contains "/summer/" %}
+    {% assign context = site.academy %}
+{% elsif page.url contains "/awards/" %}
+    {% assign context = site.awards %}
+{% else %}
+    {% assign context = site %}
+{% endif %}
+
 <div class="footer-section">
     <h2>Contact Us</h2>
     <p>
         {{ site.phone }}
-        <br><a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <br><a href="mailto:{{ site.email }}">{{ context.email }}</a>
     </p>
     
     <h2 class="footer-title">Address</h2>
@@ -13,13 +23,18 @@
 
 <div class="footer-section">
     <h2>Coordinators</h2>
-    {% for coordinator in site.coordinators %}
+    {% for coordinator in context.coordinators %}
         <p>
             {{ coordinator.name }}
             <br />
             <em>{{ coordinator.position }}</em>
         </p>
     {% endfor %}
+    <p>
+        {{ site.president.name }}
+        <br />
+        <em>{{ site.president.position }}</em>
+    </p>
 </div>
 
 <div class="footer-section footer-credit">

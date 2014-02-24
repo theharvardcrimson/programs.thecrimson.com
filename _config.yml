@@ -1,14 +1,58 @@
 organization: The Harvard Crimson
-name: High School Journalism Portal
+name: High School Journalism
 address: "14 Plympton Street\nCambridge, MA 02138"
 phone: (617) 576-6600
-email: conference@thecrimson.com
+email: programs@thecrimson.com
 pygments: true
+
+president:
+  name: Samuel Weinstock
+  position: Harvard Crimson President
+  email: president@thecrimson.com
+
+managingeditor:
+  - name: Nicholas Fandos
+  - email: managingeditor@thecrimson.com
 
 coordinators:
   - name: Samir Gupta
     position: Conference Director
-  - name: Dev Patel
-    position: Content Director 
-  - name: Samuel Weinstock
-    position: Harvard Crimson President
+    email: samir.gupta@thecrimson.com
+    phone: (915) 256-4769
+  - name: Patrick Liu
+    position: Awards Program Coordinator
+    email: patrick.liu@thecrimson.com
+    phone: (817) 368-1486
+
+conference:
+  email: conference@thecrimson.com
+  coordinators:
+    - name: Samir Gupta
+      position: Conference Director
+      email: samir.gupta@thecrimson.com
+      phone: (915) 256-4769
+    - name: Dev Patel
+      position: Content Director
+      email: dev.patel@thecrimson.com
+
+awards:
+  email: awards@thecrimson.com
+  coordinators:
+    - name: Patrick Liu
+      position: Awards Program Coordinator
+      email: patrick.liu@thecrimson.com
+      phone: (817) 368-1486
+    - name: Matthew Clarida
+      position: Content Director
+      email: matthew.clarida@thecrimson.com
+    - name: Steven Watros
+      position: Content Director
+      email: steven.watros@thecrimson.com
+
+academy:
+  email: academy@thecrimson.com
+  coordinators:
+    - name: Samir Gupta
+      position: Summer Journalism Academy Director
+      email: samir.gupta@thecrimson.com
+      phone: (915) 256-4769

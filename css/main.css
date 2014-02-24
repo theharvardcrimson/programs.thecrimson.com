@@ -159,7 +159,7 @@ a {
 	max-width: 960px;
 	margin: 0 auto;
 	overflow: hidden;
-	padding: 10px 0 40px;
+	padding: 10px 5px 40px;
 }
 
 .main h2 {
@@ -655,7 +655,19 @@ iframe {
 #application-section iframe, 
 #awards-contact-section iframe {
     width: 700px;
-    height: 1200px;
+    height: 900px;
     margin-top: 15px;
     background: rgba(255, 255, 255, .02);
+}
+
+#application-section iframe {
+	height: 1200px;
+}
+
+#awards-contact-section .first {
+	width: 20%;
+}
+
+#awards-contact-section .second {
+	width: 70%;
 }

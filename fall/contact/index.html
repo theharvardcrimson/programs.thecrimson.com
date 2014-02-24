@@ -11,30 +11,31 @@ title: Contact and Location | Summer Journalism Conference
         <img src="/assets/banner04.jpg" />                    
     </div>
     <div class="main">
-    	<div class="first">
-	        <h2>Contact</h2>
-	        LuShuang Xu<br />
-			<em>Conference Director</em><br />
-			<a href="mailto:lushuang.xu@thecrimson.com">lushuang.xu@thecrimson.com</a><br />
-			(617) 576-6600<br /><br />
+        <div class="first">
+            <h2>Contact</h2>
+            {% for coordinator in site.conference.coordinators %}
+            {{ coordinator.name }}<br />
+            <em>{{ coordinator.position }}</em><br />
+            <a href="mailto:{{ coordinator.email }}">{{ coordinator.email }}</a><br />
+            {% if coordinator.phone %}
+                {{ coordinator.phone }}<br /><br />
+            {% else %}
+                <br />
+            {% endif %}
+            {% endfor %}
+            {{ site.president.name }}<br />
+            <em>{{ site.president.position }}</em><br />
+            <a href="mailto:{{ site.president.email }}">{{ site.president.email }}</a><br /><br />
+        </div>
 
-			Kerry Flynn<br />
-			<em>Content Director</em><br />
-			<a href="kerry.flynn@thecrimson.com">kerry.flynn@thecrimson.com</a><br /><br />
+        <div class="second">
+            <h2>Location</h2>
+            <strong>The Harvard Crimson</strong><br />
+            14 Plympton St.<br />
+            Cambridge, MA 02138<br />
 
-			Bobby Samuels<br />
-			<em>Harvard Crimson President</em><br />
-			<a href="robertsamuels@college.harvard.edu">robertsamuels@college.harvard.edu</a><br />
-		</div>
+            <p>The Conference takes place at The Crimson building, located at 14 Plympton Street in Harvard Square. We are just a three-minute walk from the Harvard Square stop of the Red Line.</p>
 
-		<div class="second">
-			<h2>Location</h2>
-			<strong>The Harvard Crimson</strong><br />
-			14 Plympton St.<br />
-			Cambridge, MA 02138<br />
-
-			<p>The Academy takes place at The Crimson building, located at 14 Plympton Street in Harvard Square. We are just a three-minute walk from the Harvard Square stop of the Red Line.</p>
-
-			<p><em>MBTA:</em> Take the Red Line to Harvard Square stop and then walk east on Massachusetts Avenue towards Plympton Street. Make a right on Plympton Street between the Harvard Book Store and TD Bank, and The Crimson will be on your left hand side.</p>
-		</div>
+            <p><em>MBTA:</em> Take the Red Line to Harvard Square stop and then walk east on Massachusetts Avenue towards Plympton Street. Make a right on Plympton Street between the Harvard Book Store and TD Bank, and The Crimson will be on your left hand side.</p>
+        </div>
 </div> 
