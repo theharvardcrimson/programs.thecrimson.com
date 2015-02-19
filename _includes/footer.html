@@ -1,9 +1,9 @@
-{% if page.url contains "/fall/" or page.url contains "/spring/" %}
-    {% assign context = site.conference %}
+{% if page.url contains "/fall/" %}
+    {% assign context = site.fall %}
+{% elsif page.url contains "/spring/" %}
+    {% assign context = site.spring %}
 {% elsif page.url contains "/summer/" %}
     {% assign context = site.academy %}
-{% elsif page.url contains "/awards/" %}
-    {% assign context = site.awards %}
 {% else %}
     {% assign context = site %}
 {% endif %}

@@ -13,7 +13,7 @@ title: Contact and Location | Summer Journalism Conference
     <div class="main">
         <div class="first">
             <h2>Contact</h2>
-            {% for coordinator in site.conference.coordinators %}
+            {% for coordinator in site.coordinators %}
             {{ coordinator.name }}<br />
             <em>{{ coordinator.position }}</em><br />
             <a href="mailto:{{ coordinator.email }}">{{ coordinator.email }}</a><br />

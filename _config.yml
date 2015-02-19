@@ -6,53 +6,48 @@ email: programs@thecrimson.com
 pygments: true
 
 president:
-  name: Samuel Weinstock
+  name: Steven Lee
   position: Harvard Crimson President
   email: president@thecrimson.com
 
 managingeditor:
-  name: Nicholas Fandos
+  name: Madeline Conway
   email: managingeditor@thecrimson.com
 
 coordinators:
-  - name: Samir Gupta
-    position: Conference Director
-    email: samir.gupta@thecrimson.com
-    phone: (915) 256-4769
-  - name: Patrick Liu
-    position: Awards Program Coordinator
-    email: patrick.liu@thecrimson.com
-    phone: (817) 368-1486
+  - name: "Julie Salzinger,<br /> Brian De Luna, <br />Farhana Nabi"
+    position: Conference Directors
+    email: programs@thecrimson.com
+  - name: Christine Cahill
+    position: Spring Content Director
+    email: programs@thecrimson.com
 
-conference:
-  email: conference@thecrimson.com
+spring:
+  email: programs@thecrimson.com
   coordinators:
-    - name: Samir Gupta
-      position: Conference Director
-      email: samir.gupta@thecrimson.com
+    - name: "Julie Salzinger,<br /> Brian De Luna, <br />Farhana Nabi"
+      position: Conference Directors
+      email: programs@thecrimson.com
       phone: (915) 256-4769
-    - name: Dev Patel
+    - name: Christine Cahill
       position: Content Director
-      email: dev.patel@thecrimson.com
+      email: programs@thecrimson.com
 
-awards:
-  email: awards@thecrimson.com
+fall:
+  email: programs@thecrimson.com
   coordinators:
-    - name: Patrick Liu
-      position: Awards Program Coordinator
-      email: patrick.liu@thecrimson.com
-      phone: (817) 368-1486
-    - name: Matthew Clarida
+    - name: "Julie Salzinger,<br /> Brian De Luna, <br />Farhana Nabi"
+      position: Conference Directors
+      email: programs@thecrimson.com
+      phone: (915) 256-4769
+    - name: Christine Cahill
       position: Content Director
-      email: matthew.clarida@thecrimson.com
-    - name: Steven Watros
-      position: Content Director
-      email: steven.watros@thecrimson.com
+      email: programs@thecrimson.com
 
 academy:
-  email: academy@thecrimson.com
+  email: programs@thecrimson.com
   coordinators:
-    - name: Samir Gupta
-      position: Summer Journalism Academy Director
-      email: samir.gupta@thecrimson.com
+    - name: "Julie Salzinger,<br /> Brian De Luna, <br />Farhana Nabi"
+      position: Summer Journalism Academy Directors
+      email: programs@thecrimson.com
       phone: (915) 256-4769
