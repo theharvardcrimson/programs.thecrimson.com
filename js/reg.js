@@ -2,7 +2,7 @@ $(document).ready(function(){
 	var $iframe = $('iframe');
 
 	$iframe.load(function(){
-		$iframe.contents().find('input[name="entry.580305412"], input[name="returning_students"], input[name="entry.1881152076"]').change(function(){
+		$iframe.contents().find('input').change(function(){
 			updatePrice();
 		});
 	});
@@ -13,15 +13,27 @@ function updatePrice() {
 
 	var price = 30; // Base price is $30
 
-	var totval = parseInt($iframe.find('input[name="entry.580305412"]').val());
-	var retval = parseInt($iframe.find('input[name="returning_students"]').val());
+	var totval = parseInt($iframe.find('#total_students').val());
+	var retval = parseInt($iframe.find('#returning_students').val());
+
+	var certs_val = parseInt($iframe.find('#certificates').val());
+	var shirts_val = parseInt($iframe.find('#shirts').val());
+	var sweatshirts_val = parseInt($iframe.find('#sweatshirts').val());
+	var packages_val = parseInt($iframe.find('#packages').val());
+
+	var certs = isNaN(certs_val) ? 0 : certs_val;
+	var shirts = isNaN(shirts_val) ? 0 : shirts_val;
+	var sweatshirts = isNaN(sweatshirts_val) ? 0 : sweatshirts_val;
+	var packages = isNaN(packages_val) ? 0 : packages_val;
 
 	var tot_students = isNaN(totval) ? 0 : totval;
 	var ret_students = isNaN(retval) ? 0 : retval;
-	var review = $iframe.find('input[name="entry.1881152076"]:checked').val() == 'Yes';
+	var review = $iframe.find('#review input:checked').val() == 'Yes';
 
 	price += (tot_students - ret_students) * 65;
 	price += ret_students * 55;
+	price += 10*certs + 20*shirts + 30*sweatshirts  + 50*packages;
+
 	if (review) {
 		price += 50;
 	}
