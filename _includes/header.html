@@ -15,8 +15,10 @@
 <div id="navigation" class="row">
     {% include pages.html %}
 </div>
-{% if page.url != "/index.html" %}
-<div id="subnavigation" class="row">
-    {% include subpages.html %}
-</div>
+{% if page.url == "/index.html" or page.url contains "/financial-aid/" %}
+  {% comment %}Liquid templates don't support the not operator.{% endcomment %}
+{% else %}
+    <div id="subnavigation" class="row">
+        {% include subpages.html %}
+    </div>
 {% endif %}
