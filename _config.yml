@@ -6,48 +6,39 @@ email: programs@thecrimson.com
 pygments: true
 
 president:
-  name: Steven Lee
+  name: Mariel Klein
   position: Harvard Crimson President
   email: president@thecrimson.com
 
 managingeditor:
-  name: Madeline Conway
+  name: Meg Bernhard
   email: managingeditor@thecrimson.com
 
 coordinators:
-  - name: "Julie Salzinger,<br /> Brian De Luna, <br />Farhana Nabi"
+  - name: "Christine Zhang,<br /> Sean Fahey, <br />Charlene Hwang"
     position: Conference Directors
-    email: programs@thecrimson.com
-  - name: Christine Cahill
-    position: Spring Content Director
     email: programs@thecrimson.com
 
 spring:
   email: programs@thecrimson.com
   coordinators:
-    - name: "Julie Salzinger,<br /> Brian De Luna, <br />Farhana Nabi"
-      position: Conference Directors
-      email: programs@thecrimson.com
-      phone: (915) 256-4769
-    - name: Christine Cahill
-      position: Content Director
-      email: programs@thecrimson.com
+  - name: "Christine Zhang,<br /> Sean Fahey, <br />Charlene Hwang"
+    position: Conference Directors
+    email: programs@thecrimson.com
 
 fall:
   email: programs@thecrimson.com
   coordinators:
-    - name: "Julie Salzinger,<br /> Brian De Luna, <br />Farhana Nabi"
-      position: Conference Directors
-      email: programs@thecrimson.com
-      phone: (915) 256-4769
-    - name: Christine Cahill
-      position: Content Director
-      email: programs@thecrimson.com
+  coordinators:
+  - name: "Christine Zhang,<br /> Sean Fahey, <br />Charlene Hwang"
+    position: Conference Directors
+    email: programs@thecrimson.com
+
 
 academy:
   email: programs@thecrimson.com
   coordinators:
-    - name: "Julie Salzinger,<br /> Brian De Luna, <br />Farhana Nabi"
-      position: Summer Journalism Academy Directors
-      email: programs@thecrimson.com
-      phone: (915) 256-4769
+  coordinators:
+  - name: "Christine Zhang,<br /> Sean Fahey, <br />Charlene Hwang"
+    position: Conference Directors
+    email: programs@thecrimson.com
