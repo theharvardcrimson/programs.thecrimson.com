@@ -15,7 +15,7 @@ Run ``jekyll serve`` to see the local changes, which will show up on refresh.
 
 * Install s3_website with ``gem install s3_website``, using ``sudo`` if necessary. If you get an error with ``/usr/bin/``, tack on ``-n /usr/local/bin`` to the command.
 
-* ``s3_website cfg create`` creates a new s3_website.yml. Put in the AWS credentials (same as with the normal website) and conferences.thecrimson.com as the bucket.
+* ``s3_website cfg create`` creates a new s3_website.yml. Put in the AWS credentials (same as with the normal website) and conferences.thecrimson.com or programs.thecrimson.com as the bucket.
 
 * ``s3_website cfg apply`` configures everything for you.
 
