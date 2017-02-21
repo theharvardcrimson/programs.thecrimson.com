@@ -6,23 +6,23 @@ email: programs@thecrimson.com
 highlighter: pygments
 
 president:
-  name: Mariel Klein
+  name: Derek K. Choi
   position: Harvard Crimson President
   email: president@thecrimson.com
 
 managingeditor:
-  name: Meg Bernhard
+  name: Andrew M. Duehren
   email: managingeditor@thecrimson.com
 
 coordinators:
-  - name: "Christine Zhang,<br /> Sean Fahey, <br />Charlene Hwang"
+  - name: "Garam Noh,<br /> Monika K. Piascik, <br />Harriet Tieh"
     position: Conference Directors
     email: programs@thecrimson.com
 
 spring:
   email: programs@thecrimson.com
   coordinators:
-  - name: "Christine Zhang,<br /> Sean Fahey, <br />Charlene Hwang"
+  - name: "Garam Noh,<br /> Monika K. Piascik, <br />Harriet Tieh"
     position: Conference Directors
     email: programs@thecrimson.com
 
@@ -30,7 +30,7 @@ fall:
   email: programs@thecrimson.com
   coordinators:
   coordinators:
-  - name: "Christine Zhang,<br /> Sean Fahey, <br />Charlene Hwang"
+  - name: "Garam Noh,<br /> Monika K. Piascik, <br />Harriet Tieh"
     position: Conference Directors
     email: programs@thecrimson.com
 
@@ -39,6 +39,6 @@ academy:
   email: programs@thecrimson.com
   coordinators:
   coordinators:
-  - name: "Christine Zhang,<br /> Sean Fahey, <br />Charlene Hwang"
+  - name: "Garam Noh,<br /> Monika K. Piascik, <br />Harriet Tieh"
     position: Conference Directors
     email: programs@thecrimson.com
