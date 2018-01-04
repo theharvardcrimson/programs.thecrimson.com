@@ -1,23 +1,29 @@
 ## Getting Started
 
-Things you may need to install, with ``sudo`` or with ``-n /usr/local/bin`` attached if OSX complains about ``/usr/bin/``:
+The Harvard Crimson Journalism Conferences website is a static site that is generated using Ruby. So in order to make modifications to it and deploy it, you need to ensure that you have the latest version of `ruby` installed alongside the latest version of `gem` (the package manager for Ruby).
 
-* ``gem install bundler``
-* ``bundle install`` (installs all the required gems)
+Once you've done that, add these two lines to the bottom of your `~/.bashrc`
+```
+export GEM_HOME=~/.gem
+export GEM_PATH=~/.gem
+```
 
-If any gem in particular gives you trouble after these two, you can try installing it directly with ``gem install [gemname]``.
+Once you've done this, run the following commands:
+* `gem install bundler`
+* `bundle install` (installs all the required gems)
 
-Run ``jekyll serve`` to see the local changes, which will show up on refresh.
+If any gem in particular gives you trouble after these two, you can try installing it directly with `gem install [gemname]`.
+
+Run `bundle exec jekyll serve` to see the local changes, which will show up on refresh.
 
 ===========================
 
 ##Deployment
 
-* Install s3_website with ``gem install s3_website``, using ``sudo`` if necessary. If you get an error with ``/usr/bin/``, tack on ``-n /usr/local/bin`` to the command.
+* `s3_website` should already be installed as a result of the `bundle install` command above, but if it isn't then install it using ``gem install s3_website``.
 
-* ``s3_website cfg create`` creates a new s3_website.yml. Put in the AWS credentials (same as with the normal website) and conferences.thecrimson.com or programs.thecrimson.com as the bucket.
+* `bundle exec s3_website cfg create` creates a new s3_website.yml. Put in the AWS credentials (same as with the normal website) and conferences.thecrimson.com or programs.thecrimson.com as the bucket.
 
-* ``s3_website cfg apply`` configures everything for you.
+* `bundle exec s3_website cfg apply` configures everything for you.
 
-* ``s3_website push`` deploys the code to the website.
-
+* `bundle exec s3_website push` deploys the code to the website.
