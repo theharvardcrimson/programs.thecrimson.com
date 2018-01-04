@@ -9,6 +9,7 @@ export GEM_PATH=~/.gem
 ```
 
 Once you've done this, run the following commands:
+* `source ~/.bashrc`
 * `gem install bundler`
 * `bundle install` (installs all the required gems)
 
