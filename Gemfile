@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 2.5.3'
-gem 's3_website', '~> 2.8.4'
+gem 'jekyll', '~> 3.7.0'
+gem 's3_website', '~> 3.4.0'
