@@ -18,7 +18,7 @@ Run `bundle exec jekyll serve` to see the local changes, which will show up on r
 
 ===========================
 
-##Deployment
+## Deployment
 
 * `s3_website` should already be installed as a result of the `bundle install` command above, but if it isn't then install it using ``gem install s3_website``.
 
