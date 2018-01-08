@@ -9,6 +9,7 @@ export GEM_PATH=~/.gem
 ```
 
 Once you've done this, run the following commands:
+* `source ~/.bashrc`
 * `gem install bundler`
 * `bundle install` (installs all the required gems)
 
@@ -18,7 +19,7 @@ Run `bundle exec jekyll serve` to see the local changes, which will show up on r
 
 
 
-##Deployment
+## Deployment
 
 * `s3_website` should already be installed as a result of the `bundle install` command above, but if it isn't then install it using ``gem install s3_website``.
 
