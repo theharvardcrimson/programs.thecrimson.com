@@ -30,9 +30,10 @@ function updatePrice() {
 	var ret_students = isNaN(retval) ? 0 : retval;
 	var review = $iframe.find('#review input:checked').val() == 'Yes';
 
+	tot_students = Math.max(tot_students, ret_students);
 	price += (tot_students - ret_students) * 65;
 	price += ret_students * 55;
-	price += 10*certs + 20*shirts + 30*sweatshirts  + 50*packages;
+	price += 10*certs + 20*shirts + 30*sweatshirts + 50*packages;
 
 	if (review) {
 		price += 50;

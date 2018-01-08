@@ -16,7 +16,7 @@ If any gem in particular gives you trouble after these two, you can try installi
 
 Run `bundle exec jekyll serve` to see the local changes, which will show up on refresh.
 
-===========================
+
 
 ##Deployment
 

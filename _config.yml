@@ -15,22 +15,21 @@ managingeditor:
   email: managingeditor@thecrimson.com
 
 coordinators:
-  - name: "Sabrina Chok"
+  - name: "Sabrina W. Chok"
     position: Conference Director
     email: programs@thecrimson.com
 
 spring:
   email: programs@thecrimson.com
   coordinators:
-  - name: "Sabrina Chok"
+  - name: "Sabrina W. Chok"
     position: Conference Director
     email: programs@thecrimson.com
 
 fall:
   email: programs@thecrimson.com
   coordinators:
-  coordinators:
-  - name: "Sabrina Chok"
+  - name: "Sabrina W. Chok"
     position: Conference Director
     email: programs@thecrimson.com
 
@@ -38,7 +37,6 @@ fall:
 academy:
   email: programs@thecrimson.com
   coordinators:
-  coordinators:
-  - name: "Sabrina Chok"
+  - name: "Sabrina W. Chok"
     position: Conference Director
     email: programs@thecrimson.com

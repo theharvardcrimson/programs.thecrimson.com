@@ -1,0 +1,95 @@
+---
+layout: default
+title: FAQ | Spring Innovation Conference
+---
+
+
+<div id="summer-contact-section">
+    <div class="intro">
+        <div class="intro-text">
+        </div>
+        <img src="/assets/banner06.jpg" />
+    </div>
+    <div class="main">
+        <h2>Frequently Asked Questions</h2>
+
+        <ul class="faq">
+            <li>
+                <span class="faq-question">I didn’t attend the fall conference. Can I attend this one?</span>
+                <span class="faq-answer">Yes! Regardless of experience and age, as long as you have an interest in journalism, this conference is the one for you.</span>
+            </li>
+
+            <li>
+                <span class="faq-question">I'm a parent and would like for my child to attend. What should I do?</span>
+                <span class="faq-answer">No worries, please contact <a href="mailto:{{ site.spring.email }}">{{ site.spring.email }}</a> with subject line: <strong>Spring JC 2018 Individual Attendee: [Full Name]</strong> and we’ll get back to you with the registration details.</span>
+            </li>
+
+            <li>
+                <span class="faq-question">How do I know I've registered and paid successfully?</span>
+                <span class="faq-answer">You will receive a confirmation email within the next couple of days with the conference schedule and attendee form.</span>
+            </li>
+
+            <li>
+                <span class="faq-question">I didn't receive a confirmation email. What should I do?</span>
+                <span class="faq-answer">Don't worry! Send us an email at <a href="mailto:{{ site.spring.email }}">{{ site.spring.email }}</a> with subject line: <strong>Registration Check: [School Name]</strong> and we'll be in touch to get things fixed.</span>
+            </li>
+
+            <li>
+                <span class="faq-question">Can I pay via check?</span>
+                <span class="faq-answer">Yes, you can. After you complete registration, please send an email to <a href="mailto:{{ site.spring.email }}">{{ site.spring.email }}</a> with subject line: <strong>Check Payment: [School Name]</strong> and we will send you the invoice and appropriate details.</span>
+            </li>
+
+            <li>
+                <span class="faq-question">I need an invoice. What should I do?</span>
+                <span class="faq-answer">Contact us at <a href="mailto:{{ site.spring.email }}">{{ site.spring.email }}</a> with subject line: <strong>Invoice Needed: [School Name]</strong> and we'll send it along!</span>
+            </li>
+
+            <li>
+                <span class="faq-question">More students would like to attend. What should I do?</span>
+                <span class="faq-answer">We'd love to have them! Please send an email to programs@thecrimson with subject title: Registration Change: [School Name] and we'll work with you from there!</span>
+            </li>
+
+            <li>
+                <span class="faq-question">Is there housing provided?</span>
+                <span class="faq-answer">Unfortunately, housing is not provided. There are many affordable hotel accommodations in Harvard Square and the greater Boston area, so we recommend booking a night with a local hotel if you’re coming from out of town.</span>
+            </li>
+
+            <li>
+                <span class="faq-question">I'm arriving late. What should I do?</span>
+                <span class="faq-answer">No worries, we totally understand. Just send an email with the estimated time of arrival to <a href="mailto:{{ site.spring.email }}">{{ site.spring.email }}</a> with subject line: <strong>Late Arrival: [School Name]</strong> and we’ll make separate registration arrangements.</span>
+            </li>
+
+            <li>
+                <span class="faq-question">I would like to leave early. What should I do?</span>
+                <span class="faq-answer">Not a problem at all! Just send a email with your approximate time of departure to <a href="mailto:{{ site.spring.email }}">{{ site.spring.email }}</a> with subject line: <strong>Early Departure: [School Name]</strong>.</span>
+            </li>
+
+            <li>
+                <span class="faq-question">Is breakfast and lunch provided?</span>
+                <span class="faq-answer">Yes, we need full stomachs to learn! Please arrive on time for some coffee, hot chocolate and donuts in the morning. Lunch will be served in the afternoon. Have allergies we should know of? No problem! Be sure to note that in the Attendee Form in your confirmation email.</span>
+            </li>
+
+            <li>
+                <span class="faq-question">I ordered a newspaper review. What should I do?</span>
+                <span class="faq-answer">Please send a PDF copy of your most recent publication to <a href="mailto:{{ site.spring.email }}">{{ site.spring.email }}</a> with subject line: <strong>Newspaper Review: [School Name]</strong> by March 25th. Please also bring a physical copy with you on the day of.</span>
+            </li>
+
+            <li>
+                <span class="faq-question">I loved the conference and want to leave a review! What should I do?</span>
+                <span class="faq-answer">We're so glad you enjoyed it. We always love hearing from you guys, so please leave us your comments in the <a href="/spring/feedback">Feedback tab</a>! If you have specific shout-outs, let us know too!</span>
+            </li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+        $('.faq-question').click(function() {
+            let $answer = $(this).parent().find('.faq-answer');
+            if ($answer.is(':visible')) {
+                $answer.hide();
+            } else {
+                $answer.css('display', 'block');
+            }
+        });
+    </script>
+
+</div>

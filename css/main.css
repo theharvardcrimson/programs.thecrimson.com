@@ -112,6 +112,12 @@ a {
   padding-bottom: 10px;
 }
 
+@media (max-width: 920px) {
+  #subnavigation ul li {
+    font-size: 15px;
+  }
+}
+
 #navigation ul li.active a, #subnavigation ul li.active a {
   font-weight: bold;
 }
@@ -270,7 +276,7 @@ ul {
   margin: 0 0 35px;
 }
 
-ul.sections { 
+ul.sections {
   display: block;
   text-align: center;
 }
@@ -334,8 +340,8 @@ tr.no-border td:first-child {
 }
 
 .price-line {
-    font-size: 0.8em;
-    font-style: italic;
+  font-size: 0.8em;
+  font-style: italic;
 }
 
 blockquote {
@@ -458,104 +464,103 @@ a:hover {
 }
 
 form {
-    width: 600px;
-    background: rgba(255, 255, 255, .02);
-    padding: 30px 40px;
-    overflow: hidden;
-    font-family: "Merriweather", serif;
-    color: #EEE;
+  width: 600px;
+  background: rgba(255, 255, 255, .02);
+  padding: 30px 40px;
+  overflow: hidden;
+  font-family: "Merriweather", serif;
+  color: #EEE;
 }
 form p {
-    line-height: 20px;
-    margin-bottom: 20px;
+  line-height: 20px;
+  margin-bottom: 20px;
 }
 form h2 {
-    clear: both;
-    margin: 0 0 20px;
-    font-weight: normal;
-    color: #ba0600;
+  clear: both;
+  margin: 0 0 20px;
+  font-weight: normal;
+  color: #ba0600;
 }
 form hr {
-    clear: both;
-    width: 100%;
-    border-top: 1px dotted #555;
-    border-bottom: 0;
-    border-left: 0;
-    margin: 0 0 20px;
+  clear: both;
+  width: 100%;
+  border-top: 1px dotted #555;
+  border-bottom: 0;
+  border-left: 0;
+  margin: 0 0 20px;
 }
 form label {
-    clear: both;
-    display: block;
-    float: left;
-    width: 320px;
-    font-size: 14px;
-    margin: 0 0 20px 0;
+  clear: both;
+  display: block;
+  float: left;
+  width: 320px;
+  font-size: 14px;
+  margin: 0 0 20px 0;
 }
 form ul {
-    float: right;
-    list-style: none;
+  float: right;
+  list-style: none;
 }
-form input[type="text"], form input[type="submit"], form select {
-    width: 240px;
-    float: right;
-    background: none;
-    padding: 4px;
-    margin: 0 0 30px;
-    outline: 0;
-    border: 1px solid #666;
-    color: #666;
-    font-size: 12px;
+form input[type="text"], form input[type="number"], form input[type="submit"], form select {
+  width: 240px;
+  float: right;
+  background: none;
+  padding: 4px;
+  margin: 0 0 30px;
+  outline: 0;
+  border: 1px solid #666;
+  color: #666;
+  font-size: 12px;
 }
 form textarea {
-    width: 240px;
-    float: right;
-    background: none;
-    padding: 4px;
-    margin: 0 0 20px;
-    outline: 0;
-    border: 1px solid #666;
-    color: #666;
-    font-size: 12px;
+  width: 240px;
+  float: right;
+  background: none;
+  padding: 4px;
+  margin: 0 0 20px;
+  outline: 0;
+  border: 1px solid #666;
+  color: #666;
+  font-size: 12px;
 }
-form input:focus {
-    border: 1px solid #FFF;
-    color: #FFF;
-}    
+form input:focus, form textarea:focus {
+  border: 1px solid #FFF;
+  color: #FFF;
+}
 form input[type="radio"] {
 }
 form select {
-    color: #FFF;
-    background: #1f2326;
+  color: #FFF;
+  background: #1f2326;
 }
 form input[type="submit"] {
-    width: auto;
-    float: left;
-    margin-top: 30px;
-    padding: 8px 16px;
-    font-family: "Merriweather";
-    font-size: 20px;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-}
-form input[type="submit"]:hover {
-    cursor: pointer;
-    color: #FFF;
-    border: 1px solid #FFF;
+  width: auto;
+  float: left;
+  margin-top: 30px;
+  padding: 8px 16px;
+  font-family: "Merriweather";
+  font-size: 20px;
+  cursor: pointer;
+  color: #FFF;
+  border: 1px solid #FFF;
 }
 form .more {
-    font-size: 12px;
-    color: #999;
+  font-size: 12px;
+  color: #999;
 }
 form .radio-choices {
   float: left;
   margin: 0 0 30px 30px;
   width: 250px;
 }
-form .radio-choices .radio {
-    display: inline-block;
-    margin: 0 0 12px 12px;
+form .radio-choices {
+  display: inline-block;
+  margin: 0 0 12px 12px;
 }
-
+form .radio {
+  display: inline;
+  margin: 6px;
+}
 div#pricebox {
   color: #FFFFFF;
   font-weight: bolder;
@@ -580,90 +585,90 @@ iframe {
 /* HEADER */
 
 #title h1 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 0;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 0;
 }
 
 #title p {
-    text-align: center;
+  text-align: center;
 }
 
 /* CATEGORIES */
 
 #categories {
-    font-size: 18px;
-    width: 250px;
-    float: left;
+  font-size: 18px;
+  width: 250px;
+  float: left;
 }
 
 #categories li {
-    cursor: pointer;
-    margin: 10px 0;
+  cursor: pointer;
+  margin: 10px 0;
 }
 
 #categories li:hover {
-    color: #CCC;
+  color: #CCC;
 }
 
 #categories .multi.active:hover {
-    color: #EEE;
+  color: #EEE;
 }
 
 .multi {
-    list-style: none;
-    margin-left: -1.2em;
+  list-style: none;
+  margin-left: -1.2em;
 }
 
 .multi:before {
-    position: relative;
-    display: inline-block;
-    content: "";
-    height: 0;
-    width: 0;
+  position: relative;
+  display: inline-block;
+  content: "";
+  height: 0;
+  width: 0;
 
-    border-top: .4em solid rgba(0, 0, 0, 0);
-    border-bottom: .4em solid rgba(0, 0, 0, 0);
-    border-left: .5em solid #EEEEEE;
-    border-right: .5em solid rgba(0, 0, 0, 0);
+  border-top: .4em solid rgba(0, 0, 0, 0);
+  border-bottom: .4em solid rgba(0, 0, 0, 0);
+  border-left: .5em solid #EEEEEE;
+  border-right: .5em solid rgba(0, 0, 0, 0);
 }
 
 .multi.active:before {
-    top: .34em;
+  top: .34em;
 
-    border-left: .4em solid rgba(0, 0, 0, 0);
-    border-right: .4em solid rgba(0, 0, 0, 0);
-    border-bottom: .5em solid rgba(0, 0, 0, 0);
-    border-top: .5em solid #EEEEEE;
+  border-left: .4em solid rgba(0, 0, 0, 0);
+  border-right: .4em solid rgba(0, 0, 0, 0);
+  border-bottom: .5em solid rgba(0, 0, 0, 0);
+  border-top: .5em solid #EEEEEE;
 }
 
 .multi ul {
-    margin-bottom: 0;
-    display: none;
+  margin-bottom: 0;
+  display: none;
 }
 
 .multi.active ul {
-    display: block;
+  display: block;
 }
 
 
 /* FORM */
 
 .application {
-    float: left;
-    display: none;
+  float: left;
+  display: none;
 }
 
 .application.active {
-    display: block;
+  display: block;
 }
 
-#application-section iframe, 
+#application-section iframe,
 #awards-contact-section iframe {
-    width: 700px;
-    height: 900px;
-    margin-top: 15px;
-    background: rgba(255, 255, 255, .02);
+  width: 700px;
+  height: 900px;
+  margin-top: 15px;
+  background: rgba(255, 255, 255, .02);
 }
 
 #application-section iframe {
@@ -676,4 +681,14 @@ iframe {
 
 #awards-contact-section .second {
   width: 70%;
+}
+
+.faq-question {
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+}
+.faq-answer {
+  display: none;
+  padding-left: 1em;
 }
