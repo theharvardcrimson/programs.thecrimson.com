@@ -15,28 +15,39 @@ managingeditor:
   email: managingeditor@thecrimson.com
 
 coordinators:
-  - name: "Sabrina W. Chok"
+  - name: Sabrina W. Chok
     position: Conference Director
+    email: programs@thecrimson.com
+
+  - name: Chris Cheon
+    position: College Insight Director
     email: programs@thecrimson.com
 
 spring:
   email: programs@thecrimson.com
   coordinators:
-  - name: "Sabrina W. Chok"
+  - name: Sabrina W. Chok
     position: Conference Director
     email: programs@thecrimson.com
 
 fall:
   email: programs@thecrimson.com
   coordinators:
-  - name: "Sabrina W. Chok"
+  - name: Sabrina W. Chok
     position: Conference Director
     email: programs@thecrimson.com
-
 
 academy:
   email: programs@thecrimson.com
   coordinators:
-  - name: "Sabrina W. Chok"
+  - name: Sabrina W. Chok
     position: Conference Director
+    email: programs@thecrimson.com
+
+collegeinsight:
+  email: programs@thecrimson.com
+  phone: (347) 972-3798
+  coordinators:
+  - name: Chris Cheon
+    position: College Insight Director
     email: programs@thecrimson.com

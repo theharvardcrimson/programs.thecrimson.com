@@ -49,4 +49,22 @@
         <a href="/summer/contact/">Contact and Directions</a>
     </li>
     {% endif %}
+
+    {% if page.url contains "/college-insight/" %}
+    <li {% if page.url == "/college-insight/index.html" %}class="active"{% endif %}>
+        <a href="/college-insight/">About</a>
+    </li>
+    <li {% if page.url == "/college-insight/programming/index.html" %}class="active"{% endif %}>
+        <a href="/college-insight/programming/">Programming</a>
+    </li>
+    <li {% if page.url == "/college-insight/registration/index.html" %}class="active"{% endif %}>
+        <a href="/college-insight/registration/">Dates and Registration</a>
+    </li>
+    <li {% if page.url == "/college-insight/contact/index.html" %}class="active"{% endif %}>
+        <a href="/college-insight/contact/">Contact and Directions</a>
+    </li>
+    <li {% if page.url == "/college-insight/partner/index.html" %}class="active"{% endif %}>
+        <a href="/college-insight/partner/">Partner with Us</a>
+    </li>
+    {% endif %}
 </ul>

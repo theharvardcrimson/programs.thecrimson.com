@@ -108,7 +108,7 @@ a {
 #navigation ul li, #subnavigation ul li {
   display: inline-block;
   font-family: "Merriweather", serif;
-  font-size: 18px;
+  font-size: 17px;
   padding-bottom: 10px;
 }
 
@@ -326,6 +326,10 @@ ul.sections li.active {
   font-size: 16px;
   text-align: right;
   width: 35%;
+}
+
+.even-table td:nth-child(2) {
+  font-size: 16px;
 }
 
 tr.no-border td:first-child {
