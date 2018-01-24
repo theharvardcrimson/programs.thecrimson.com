@@ -11,33 +11,112 @@ title: Contact and Location | College Insight Program
         <img src="/assets/banner04.jpg" />
     </div>
     <div class="main">
-        <div class="first">
-            <h2>Contact</h2>
+        <div id="top-container">
+            <div class="first">
+                <h2>Contact</h2>
 
-            {% for coordinator in site.collegeinsight.coordinators %}
-            {{ coordinator.name }}<br />
-            <em>{{ coordinator.position }}</em><br />
-            <a href="mailto:{{ coordinator.email }}">{{ coordinator.email }}</a><br />
-            {% if coordinator.phone %}
-                {{ coordinator.phone }}<br /><br />
-            {% else %}
-                <br />
-            {% endif %}
-            {% endfor %}
-            {{ site.president.name }}<br />
-            <em>{{ site.president.position }}</em><br />
-            <a href="mailto:{{ site.president.email }}">{{ site.president.email }}</a><br /><br />
+                {% for coordinator in site.collegeinsight.coordinators %}
+                {{ coordinator.name }}<br />
+                <em>{{ coordinator.position }}</em><br />
+                <a href="mailto:{{ coordinator.email }}">{{ coordinator.email }}</a><br />
+                {% if coordinator.phone %}
+                    {{ coordinator.phone }}<br /><br />
+                {% else %}
+                    <br />
+                {% endif %}
+                {% endfor %}
+                {{ site.president.name }}<br />
+                <em>{{ site.president.position }}</em><br />
+                <a href="mailto:{{ site.president.email }}">{{ site.president.email }}</a><br /><br />
+            </div>
+            <div class="second">
+                <h2>Location</h2>
+                <strong>The Harvard Crimson</strong><br />
+                14 Plympton St.<br />
+                Cambridge, MA 02138<br />
+
+                <p>The Conference takes place at The Crimson building, located at 14 Plympton Street in Harvard Square. We are just a three-minute walk from the Harvard Square stop of the Red Line.</p>
+
+                <p><em>MBTA:</em> Take the Red Line to Harvard Square stop and then walk east on Massachusetts Avenue towards Plympton Street. Make a right on Plympton Street between the Harvard Book Store and TD Bank, and The Crimson will be on your left hand side.</p>
+            </div>
         </div>
-
-        <div class="second">
-            <h2>Location</h2>
-            <strong>The Harvard Crimson</strong><br />
-            14 Plympton St.<br />
-            Cambridge, MA 02138<br />
-
-            <p>The Conference takes place at The Crimson building, located at 14 Plympton Street in Harvard Square. We are just a three-minute walk from the Harvard Square stop of the Red Line.</p>
-
-            <p><em>MBTA:</em> Take the Red Line to Harvard Square stop and then walk east on Massachusetts Avenue towards Plympton Street. Make a right on Plympton Street between the Harvard Book Store and TD Bank, and The Crimson will be on your left hand side.</p>
+        <div id="contact-form">
+            <h2>We look forward to hearing from you!</h2>
+            <p>Call us at 347-972-3798 or email us at <a href="mailto:{{ site.collegeinsight.email }}">{{ site.collegeinsight.email }}</a>. We reply to inquiries in 1-2 business days.</p>
+            <form>
+                <div class="input-row">
+                    <div class="input-container">
+                        <p>First Name</p><br>
+                        <input type="text" name="first-name" placeholder="First Name">
+                    </div>
+                    <div class="input-container">
+                        <p>Last Name</p><br>
+                        <input type="text" name="last-name" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-container">
+                        <p>Email</p><br>
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="input-container">
+                        <p>Phone</p><br>
+                        <input type="number" name="phone" placeholder="Phone">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div id="subject-input" class="input-container">
+                        <p>Subject</p><br>
+                        <input type="text" name="subject" placeholder="Subject">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div id="message-input" class="input-container">
+                        <p>Message</p><br>
+                        <textarea placeholder="Message" rows="6"></textarea>
+                    </div>
+                </div>
+                <button>Submit</button>
+            </form>
         </div>
     </div>
+    <script>
+        let contactForm = $('#contact-form form');
+
+        function formatMessage(information) {
+            return `${information.message}
+
+${information["first-name"]} ${information['last-name']}
+${information.email}
+${information.phone}`;
+        }
+
+        contactForm.find('button').click(function (e) {
+            information = {
+                "first-name": "",
+                "last-name": "",
+                "email": "",
+                "phone": "",
+                "subject": ""
+            };
+
+            for (let key in information) {
+                information[key] = contactForm.find(`input[name='${key}']`).val();
+            }
+
+            information["message"] = contactForm.find('textarea').val();
+
+            console.log(formatMessage(information));
+            let url = "";
+            url += 'mailto:{{ site.collegeinsight.email }}?';
+            url += `subject=${encodeURIComponent(information.subject)}`;
+            url += `&body=${encodeURIComponent(formatMessage(information))}`;
+
+            window.open(url);
+
+            contactForm[0].reset();
+            return false;
+        })
+    </script>
+
 </div>

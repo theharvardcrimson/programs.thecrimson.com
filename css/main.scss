@@ -1,3 +1,6 @@
+---
+---
+
 body {
   background: url('../assets/bg_main.jpg');
   font-family: 'Open Sans', sans-serif;
@@ -696,3 +699,87 @@ iframe {
   display: none;
   padding-left: 1em;
 }
+
+#summer-contact-section {
+  #top-container {
+    display: flex;
+  }
+
+  .first, .second {
+    flex-grow: 1;
+    flex-basis: 0;
+    width: auto;
+    float: auto;
+  }
+
+  form {
+    all: unset;
+    width: 400px;
+    display: inline-block;
+    // white-space: nowrap;
+    box-sizing: border-box;
+
+    * {
+      all: unset;
+    }
+
+    .input-row {
+      width: 100%;
+      display: inline-flex;
+
+    }
+    .input-container {
+      display: inline-block;
+      width: 100%;
+      flex-grow: 1;
+      flex-basis: 0;
+      margin: 0px 5px 20px;
+
+    }
+
+    #subject-input {
+      width: 100%;
+    }
+
+    input {
+      border-color: white;
+      border-width: 1px;
+      border-style: solid;
+      display: inline-block;
+      width: 100%;
+      padding: 0px 5px;
+      box-sizing: border-box;
+      &[name='subject'] {
+        width: 100%;
+      }
+    }
+
+
+    #message-input {
+      width: 100%;
+    }
+
+    textarea {
+      box-sizing: border-box;
+      border-color: white;
+      border-width: 1px;
+      border-style: solid;
+      width: 100%;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+      resize: vertical;
+      padding: 0px 5px;
+      // margin: 5px;
+    }
+
+    button {
+      border-color: white;
+      border-width: 1px;
+      border-style: solid;
+      padding: 5px 10px;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+  }
+}
+

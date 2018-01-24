@@ -21,7 +21,11 @@ coordinators:
 
   - name: Chris Cheon
     position: College Insight Director
-    email: programs@thecrimson.com
+    email: chris.cheon@thecrimson.com
+
+  - name: Rebecca C. Lisk
+    position: College Insight Director
+    email: rebecca.lisk@thecrimson.com
 
 spring:
   email: programs@thecrimson.com
@@ -50,4 +54,7 @@ collegeinsight:
   coordinators:
   - name: Chris Cheon
     position: College Insight Director
-    email: programs@thecrimson.com
+    email: chris.cheon@thecrimson.com
+  - name: Rebecca C. Lisk
+    position: College Insight Director
+    email: rebecca.lisk@thecrimson.com
