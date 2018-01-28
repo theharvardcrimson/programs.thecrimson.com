@@ -35,6 +35,36 @@ title: Dates and Registration | College Insight Program
 
 		<p>Attendance fee for the semester day program is $140 per student. To inquire about discounted group admissions fees and scholarship opportunities, please contact us at <a href="mailto:{{ site.collegeinsight.email }}">{{ site.collegeinsight.email }}</a>.</p>
 
-		<p>To register for the College Insight Program, please contact us at <a href="mailto:{{ site.collegeinsight.email }}">{{ site.collegeinsight.email }}</a> or call <strong>{{ site.collegeinsight.phone }}</strong>. Registration for each program is due 5 business days before the beginning of that program.</p>
+        <h2>Registration</h2>
+        <p>Please submit the following form, and then proceed to submit payment at the bottom of the page. You will receive email confirmation within one business day after your registration and payment have been processed.</p>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe1u8ALdnU_9T2v2WAsmnJ4My_XJR0c-Hbg0660SJNE8Fsj9Q/viewform" width="720" height="2080" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+        <div style="width: 720px; margin: 0 auto;">
+            <h2>Payment</h2>
+            <p>After completing the registration form, please pay below:</p>
+            <form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <label for="num-students">How many students will be attending?</label>
+                <input name="num-students" type="number" value="1" min="1" step="1">
+
+                <div id="pricebox">
+                    $140
+                </div>
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="HACBD8VDMEK6G">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="hidden" name="item_name" value=" College Insight Day Program">
+                <input type="hidden" name="amount" value="140.00">
+                <input type="image" src="http://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+            </form>
+        </div>
+
+        <script type="text/javascript">
+            $('input[name="num-students"').on('change keyup', function(e) {
+                let price = 140 * $(this).val();
+                $('input[name="amount"]').val(price);
+                $('#pricebox').text('$' + price);
+            });
+        </script>
+
     </div>
 </div>
