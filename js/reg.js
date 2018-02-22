@@ -30,13 +30,17 @@ function updatePrice() {
 	var tot_students = isNaN(totval) ? 0 : totval;
 	var ret_students = isNaN(retval) ? 0 : retval;
 	var review = $iframe.find('#review input:checked').val() == 'Yes';
-	var new_school = $iframe.find('#new_school input:checked').val() == 'Yes';
+	var new_school = $iframe.find('#new_school input:checked').val() || "";
+	var is_school = $iframe.find('#is_school input:checked').val() || "";
 
 	var returning_student_fee = 55;
 	var new_student_fee = 65;
-	if (new_school) {
+	if (new_school.startsWith('Yes')) {
 		new_student_fee = 75;
 		price += 20;
+	}
+	if (is_school.startsWith('No')) {
+		price = 0;
 	}
 
 	tot_students = Math.max(tot_students, ret_students);
