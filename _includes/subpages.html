@@ -67,4 +67,16 @@
         <a href="/college-insight/partner/">Partner with Us</a>
     </li>
     {% endif %}
+
+    {% if page.url contains "/hpic/" %}
+    <li {% if page.url == "/hpic/index.html" %}class="active"{% endif %}>
+        <a href="/hpic/">About</a>
+    </li>
+    <li {% if page.url == "/hpic/programming/index.html" %}class="active"{% endif %}>
+        <a href="/hpic/programming/">Programming</a>
+    </li>
+    <li {% if page.url == "/hpic/contact/index.html" %}class="active"{% endif %}>
+        <a href="/hpic/contact/">Contact Us</a>
+    </li>
+    {% endif %}
 </ul>

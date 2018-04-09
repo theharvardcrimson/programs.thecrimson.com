@@ -27,6 +27,10 @@ coordinators:
     position: College Insight Director
     email: rebecca.lisk@thecrimson.com
 
+  - name: Amy E. Zhou
+    position: Pre-Collegiate Conference Director
+    email: amy.zhou@thecrimson.com
+
 spring:
   email: programs@thecrimson.com
   coordinators:
@@ -58,3 +62,11 @@ collegeinsight:
   - name: Rebecca C. Lisk
     position: College Insight Director
     email: rebecca.lisk@thecrimson.com
+
+precollegiate:
+  email: programs@thecrimson.com
+  phone: (347) 972-3798
+  coordinators:
+  - name: Amy E. Zhou
+    position: Pre-Collegiate Conference Director
+    email: amy.zhou@thecrimson.com
