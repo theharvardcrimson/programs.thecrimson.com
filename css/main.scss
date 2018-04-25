@@ -433,6 +433,11 @@ cite {
   margin-top: 8px;
 }
 
+.sidebar .underline {
+  display: inline;
+  border-bottom: 1px dotted #ccc;
+}
+
 a {
   border-bottom: 1px dotted #ccc;
   color: #fafafa;

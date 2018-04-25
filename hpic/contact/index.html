@@ -1,0 +1,37 @@
+---
+layout: default
+title: Contact and Location | Harvard Pre-Collegiate Innovation Conference
+---
+
+
+<div id="summer-contact-section">
+    <div class="intro">
+        <div class="intro-text">
+        </div>
+        <img src="/assets/banner04.jpg" />
+    </div>
+    <div class="main">
+        <h1>Contact Us</h1>
+        <div style="font-size: 16px;">
+            <p>Are you a student looking to attend HPIC? Are you an educational institution or preparatory school hoping to bring The Harvard Crimson to your country?</p>
+            <p>We invite perspective students and partners to reach out to <a href="mailto:{{ site.precollegiate.email }}">{{ site.precollegiate.email }}</a> to answer any questions you may have!</p>
+        </div>
+        <div id="top-container">
+            <div class="first" style="margin-top: 30px;">
+                {% for coordinator in site.precollegiate.coordinators %}
+                {{ coordinator.name }}<br />
+                <em>{{ coordinator.position }}</em><br />
+                <a href="mailto:{{ coordinator.email }}">{{ coordinator.email }}</a><br />
+                {% if coordinator.phone %}
+                    {{ coordinator.phone }}<br /><br />
+                {% else %}
+                    <br />
+                {% endif %}
+                {% endfor %}
+                {{ site.president.name }}<br />
+                <em>{{ site.president.position }}</em><br />
+                <a href="mailto:{{ site.president.email }}">{{ site.president.email }}</a><br /><br />
+            </div>
+        </div>
+    </div>
+</div>
