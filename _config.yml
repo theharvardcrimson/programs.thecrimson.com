@@ -3,7 +3,7 @@ name: High School Journalism
 address: "14 Plympton Street\nCambridge, MA 02138"
 phone: (617) 576-6600
 email: programs@thecrimson.com
-highlighter: pygments
+highlighter: rouge
 
 president:
   name: Derek G. Xiao
