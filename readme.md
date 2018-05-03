@@ -17,8 +17,6 @@
 
 * If any gem in particular gives you trouble during the `bundle install` process, you can try installing it directly with `gem install [gemname]`.
 
-
-
 ## Development
 * In the home directory, run `bundle exec jekyll serve`. This starts up a local development server at <http://localhost:4000> which hosts live changes to the static site. When you modify and save the files in any folder other than than **\_site**, these changes will be visible on the site upon refresh.
 
@@ -29,14 +27,4 @@
 * Variables such the Crimson's current president are located in **\_config.yaml**, so to get the president's name in a template, write `{{ site.president.name }}`. If you find yourself hardcoding a name, email address, or phone number in a template, consider adding that information to the yaml file and using Liquid instead. This makes it so that updates to the static files only need to happen in one in place, the config file, instead of in 20 different files. TL;DR: Use **\_config.yaml** and Liquid often.
 
 ## Deployment
-* Once you're ready to deploy the site, run `bundle exec jekyll build` to generate the **\_site** directory. The files in this folder are the ones that S3 actually hosts.
-
-* The `s3_website` gem should already be installed as a result of the `bundle install` command above, but if it isn't then install it using `gem install s3_website`.
-
-* `bundle exec s3_website cfg create` creates a new s3_website.yml. Put in your AWS credentials (same as with the normal website) and conferences.thecrimson.com or programs.thecrimson.com as the bucket.
-
-* `bundle exec s3_website cfg apply` configures everything for you.
-
-* `bundle exec s3_website push` deploys the code to the website. If prompted to use CloudFront, say yes. If you've already configured s3_website, then you can can skip directly to this step after running `bundle exec jekyll build`.
-
-* Check <http://programs.thecrimson.com> to verify that the site has been updated!
+This site is deployed with GitHub Pages. Simply push to `master` remotely and ensure the changes are deployed at <https://programs.thecrimson.com>.
