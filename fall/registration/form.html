@@ -1,96 +1,128 @@
 ---
 layout: blank
-title: Registration Form | Summer Journalism Conference
+title: Registration Form | Fall 2018 Innovation Conference
 ---
-<form action="https://docs.google.com/forms/d/1QWCuLwKrq8O569c5L4Fz-RA0LbbYPOlTbPtugJMdx4c/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+<form action="https://docs.google.com/forms/d/e/1uad-aQz2Wy9q9xeQIgA-C5GVrzPEkUfQQeUD8SPAURM/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
     <div id="general">
         <h2>General Information</h2>
 
-        <label for="entry.1110051918">School Name:</label>
-        <input type="text" name="entry.1110051918" value="">
+        <label for="entry_430430650">School Name:</label>
+        <input type="text" name="entry.430430650" value="">
 
-        <label for="entry.1634697702">School Address:</label>
-        <input type="text" name="entry.1634697702" value="">
+        <label for="entry_1247351934">School Address:</label>
+        <input type="text" name="entry.1247351934" value="">
 
-        <label for="entry.353918972">Faculty Adviser&#39;s Name:</label>
-        <input type="text" name="entry.353918972" value="">
+        <label for="entry_39815271">Faculty Adviser&#39;s Name:</label>
+        <input type="text" name="entry.39815271" value="">
 
-        <label for="entry.112075878">Faculty Adviser&#39;s Email Address:</label>
-        <input type="text" name="entry.112075878" value="">
+        <label for="entry_570174253">Faculty Adviser&#39;s Email Address:</label>
+        <input type="text" name="entry.570174253" value="">
 
-        <label for="entry.2029917251">Faculty Adviser&#39;s Phone Number:</label>
-        <input type="text" name="entry.2029917251" value="">
+        <label for="entry_668979901">Faculty Adviser&#39;s Phone Number:</label>
+        <input type="text" name="entry.668979901" value="">
 
-        <label for="entry.1475351902">Total Number of Students Attending:<br />
-            <span class="more">Please enter numerically (e.g. 7).</span>
+        <label for="entry_555026821">Total Number of Students Attending:</label>
+        <input type="number" min="0" id="total_students" name="entry.555026821" value="">
+
+        <label for="entry_785527375">Total Number of Returning Students Attending:</label>
+        <input type="number" min="0" id="returning_students" name="entry.785527375" value="">
+
+        <label for="entry_1378454975">Total Number of Faculty Advisers Attending:<br />
+            <span class="more" dir="ltr">Please state 0 if none will be attending.</span>
         </label>
-        <input type="text" name="entry.1475351902" value="">
+        <input type="number" min="0" name="entry.1378454975" value="">
 
-        <label for="entry.159534032">Number of Students Who Are Returning:<br />
-            <span class="more">Please enter numerically (e.g. 7).</span>
-        </label>
-        <input type="text" name="entry.159534032" value="">
-
-        <label>How often does your paper publish?</label>
-        <div class="radio-choices">
-            <input type="radio" name="entry.756719486" value="Weekly"><div class="radio">Weekly</div><br />
-            <input type="radio" name="entry.756719486" value="Biweekly"><div class="radio">Biweekly</div><br />
-            <input type="radio" name="entry.756719486" value="Monthly"><div class="radio">Monthly</div><br />
-            <input type="radio" name="entry.756719486" value="Bimonthly"><div class="radio">Bimonthly</div><br />
-            <input type="radio" name="entry.756719486" value="Semesterly"><div class="radio">Semesterly</div><br />
-            <input type="radio" name="entry.756719486" value="Yearly"><div class="radio">Yearly</div><br />
-            <input type="radio" name="entry.756719486" value="Other"><div class="radio">Other</div>
+        <label for="entry_1704779300">Is this your school's first time attending this conference?</label>
+        <div class="radio-choices" id="new_school">
+            <div class="radio"><input type="radio" name="entry.532354875" value="Yes, I am a new school.">Yes</div>
+            <div class="radio"><input type="radio" name="entry.532354875" value="No, I am a returning school.">No</div>
         </div>
 
-        <label for="entry.384097450">Link to Newspaper Website</label>
-        <input type="text" name="entry.384097450" value="" id="entry_768521158">
+        <label for="entry_695555474">Are you registering as a school?</label>
+        <div class="radio-choices" id="is_school">
+            <div class="radio"><input type="radio" name="entry.370637587" value="Yes">Yes</div>
+            <div class="radio"><input type="radio" name="entry.370637587" value="No, I am a parent.">No, I am a parent</div>
+        </div>
 
-        <label for="entry_515511530">In what form does journalism take place at your school?<br />
+        <label for="entry_1250660510">How often does your paper publish?</label>
+        <div class="radio-choices">
+            <input type="radio" name="entry.200194655" value="Weekly"><div class="radio">Weekly</div><br>
+            <input type="radio" name="entry.200194655" value="Biweekly"><div class="radio">Biweekly</div><br>
+            <input type="radio" name="entry.200194655" value="Monthly"><div class="radio">Monthly</div><br>
+            <input type="radio" name="entry.200194655" value="Bimonthly"><div class="radio">Bimonthly</div><br>
+            <input type="radio" name="entry.200194655" value="Semesterly"><div class="radio">Semesterly</div><br>
+            <input type="radio" name="entry.200194655" value="Yearly"><div class="radio">Yearly</div><br>
+            <input type="radio" name="entry.200194655" value="Other"><div class="radio">Other</div><br>
+            <input type="text" name="entry.200194655.other_option_response" value="">
+        </div>
+
+        <label for="entry_1110920920">Link to Newspaper Website</label>
+        <input type="text" name="entry.1110920920" value="" id="entry_1110920920">
+
+        <label for="entry_1278713052">In what form does journalism take place at your school?<br>
             <span class="more">Please feel free to select more than one choice, if applicable.</span>
         </label>
         <div class="radio-choices">
-            <input type="checkbox" name="entry.1024065456" value="Extracurricular activity"><div class="radio">Extracurricular activity</div><br />
-            <input type="checkbox" name="entry.1024065456" value="Journalism class"><div class="radio">Journalism class</div><br />
-            <input type="checkbox" name="entry.1024065456" value="Part of English curriculum"><div class="radio">Part of English curriculum</div><br />
-            <input type="checkbox" name="entry.1024065456" value="Other"><div class="radio">Other</div><br />
-            <input type="text" name="entry.1024065456.other_option_response" value="">
+            <input type="checkbox" name="entry.849988229" value="Extracurricular Activity"><div class="radio">Extracurricular activity</div><br>
+            <input type="checkbox" name="entry.849988229" value="Journalism Class"><div class="radio">Journalism class</div><br>
+            <input type="checkbox" name="entry.849988229" value="Part of English curriculum"><div class="radio">Part of English curriculum</div><br>
+            <input type="checkbox" name="entry.849988229" value="__other_option__"><div class="radio">Other</div><br>
+            <input type="text" name="entry.849988229.other_option_response" value="">
         </div>
 
-        <label for="entry.1810386214">Please briefly describe your student newspaper, including total size and composition of student staff members, typical number of hours worked by students per week, frequency of publication, computer software used, awards received (if applicable), etc.</label>
-        <textarea name="entry.1810386214" rows="8" cols="0"></textarea>
+        <label for="entry_1972301680">Please briefly describe your student newspaper, including total size and composition of student staff members, typical number of hours worked by students per week, frequency of publication, computer software used, awards received (if applicable), etc.</label>
+        <textarea name="entry.1972301680" rows="8" cols="0"></textarea>
 
-        <label for="entry_1750185109">Would you like to submit an issue of your newspaper to be reviewed by Crimson editors?<br />
+        <label for="entry_1806040134">Would you like to submit an issue of your newspaper to be reviewed by Crimson editors?<br />
             <span class="more">
                 The Crimson offers the opportunity for schools to submit an issue of their newspaper to be reviewed by Crimson editors. This review will include written feedback and a 30 minute feedback session with a senior Crimson editor. If you choose to do so, please mail a hard copy of the issue to 14 Plympton St. Cambridge, MA 02138 and email a copy in PDF format to
-                <a href="mailto:conference@thecrimson.com">conference@thecrimson.com</a>
+                <a href="mailto:{{ site.fall.email }}">{{ site.fall.email }}</a>
                 . The cost is $50.
             </span>
         </label>
-        <div class="radio-choices">
-            <input type="radio" name="entry.1549393117" value="Yes"><div class="radio">Yes</div><br />
-            <input type="radio" name="entry.1549393117" value="No"><div class="radio">No</div>
+        <div class="radio-choices" id="review">
+            <div class="radio"><input type="radio" name="entry.202705329" value="Yes">Yes</div>
+            <div class="radio"><input type="radio" name="entry.202705329" value="No">No</div>
+        </div>
         </div>
 
+        <div>
         <h2>Additional Packages</h2>
         <div class="ss-section-description ss-no-ignore-whitespace">
-            If you would like to purchase certificates, t-shirts, sweatshirts, or all three, enter how many of each you would like below.
+            If you would like to purchase certificates, enter how many you would like below.
         </div>
+        </div>
+        <br />
 
-        <label for="entry.1911216508">Certificates</label>
-        <input type="text" name="entry.1911216508" value="">
+        <div>
+        <label for="entry_1271325503">Certificates
+        <span class="more" dir="ltr">$10 each</span>
+        </label>
+        <input id="certificates" type="number" min="0" name="entry.1271325503" value="">
+        </div>
+        <br />
 
-        <label for="entry.1107844426">T-shirts</label>
-        <input type="text" name="entry.1107844426" value="">
-
-        <label for="entry.1698990220">Sweatshirts</label>
-        <input type="text" name="entry.1698990220" value="">
-
-        <label for="entry.387867379">All of the above</label>
-        <input type="text" name="entry.387867379" value="">
-
-        <h2>Seminar Preferences</h2>
+        <h2>Conference Details</h2>
         <div class="ss-section-description ss-no-ignore-whitespace">
-            The seminar preference form will be sent out after you have registered. Students can list their preferences for which sessions to attend throughout the day. We will do our best to honor these requests and provide every student with their top choices. Spots will be allocated on a first come, first serve basis. Participants who do not submit the form will be assigned randomly.
+            After you've registered and paid, you will be sent a confirmation email with the finalized conference programming and attendee form within the next couple of weeks.
+        </div>
+        <br />
+
+        <h2>Payment Details</h2>
+        <div class="ss-section-description ss-no-ignore-whitespace">
+            After you click the "Complete Registration" button below, click the Paypal button underneath it to pay and secure your registration. If you'd like to pay by check, after you click the "Complete Registration" button, send us an email at <a href="mailto:{{ site.fall.email }}">{{ site.fall.email }}</a> with subject line: <strong>"Check Payment: [School Name]"</strong> and we will send you the invoice and appropriate details.
+        </div>
+        <br />
+        <br />
+
+        <label for="entry_233329779">Payment Option</label>
+        <div class="radio-choices">
+            <input type="radio" name="entry.233329779" value="Paypal"><div class="radio">Paypal</div><br>
+
+            <input type="radio" name="entry.233329779" value="Check"><div class="radio">Check</div><br>
+
+            <input type="radio" name="entry.233329779" value="__other_option__"><div class="radio">Other</div><br>
+            <input type="text" name="entry.233329779.other_option_response" value="">
         </div>
 
 
