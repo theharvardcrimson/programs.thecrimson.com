@@ -6,15 +6,19 @@ email: programs@thecrimson.com
 highlighter: rouge
 
 president:
-  name: Derek G. Xiao
+  name: Kristine E. Guillaume
   position: Harvard Crimson President
   email: president@thecrimson.com
 
 managingeditor:
-  name: Hannah Natanson
+  name: Angela N. Fu
   email: managingeditor@thecrimson.com
 
 coordinators:
+  - name: George Moe
+    position: Conference Director
+    email: programs@thecrimson.com
+
   - name: Derek Woo
     position: Conference Director
     email: programs@thecrimson.com
@@ -34,7 +38,7 @@ coordinators:
 spring:
   email: programs@thecrimson.com
   coordinators:
-  - name: Sabrina W. Chok
+  - name: George Moe
     position: Conference Director
     email: programs@thecrimson.com
 
