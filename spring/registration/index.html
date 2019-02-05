@@ -13,17 +13,31 @@ extra_js:
     </div>
     <div class="main">
     	<div class="sidebar">
-			<h3>Conference Fees</h3>
+			<h2>Conference Fees</h2>
+            <h3>Early Registration</h3>
 			<ul>
                 <h3 class="underline">Returning School</h3>
-				<li><em>$30 School Registration Fee</em></li>
-				<li><em>$65 per new attendee</em></li>
-				<li><em>$55 per returning attendee</em></li><br>
+				<li><em>$25 School Registration Fee</em></li>
+				<li><em>$60 per new attendee</em></li>
+				<li><em>$50 per returning attendee</em></li><br>
 
                 <h3 class="underline">New School</h3>
-                <li><em>$50 School Registration Fee</em></li>
-                <li><em>$75 per new attendee</em></li>
+                <li><em>$45 School Registration Fee</em></li>
+                <li><em>$70 per new attendee</em></li>
             </ul>
+
+            <h3>Regular Registration</h3>
+            <ul>
+                <h3 class="underline">Returning School</h3>
+                <li><em>$35 School Registration Fee</em></li>
+                <li><em>$70 per new attendee</em></li>
+                <li><em>$60 per returning attendee</em></li><br>
+
+                <h3 class="underline">New School</h3>
+                <li><em>$55 School Registration Fee</em></li>
+                <li><em>$80 per new attendee</em></li>
+            </ul>
+
             <h3>Additional Packages</h3>
             <ul>
                 <li><em>+ $10 each - Certificates</em></li>
@@ -60,4 +74,10 @@ extra_js:
 			</form>
 		</div>
     </div>
+
+    <script>
+        var deadline = new Date("2019-02-25 23:59:59");
+        window.springEarlyRegistration = (new Date() < deadline);
+        updatePrice();
+    </script>
 </div>

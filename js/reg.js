@@ -9,9 +9,16 @@ $(document).ready(function(){
 });
 
 function updatePrice() {
+	if (window.springEarlyRegistration === undefined) {
+		window.springEarlyRegistration = false;
+	}
+
 	var $iframe = $('iframe').contents();
 
 	var price = 30; // Base price is $30
+	if (window.springEarlyRegistration) {
+		price = 25;
+	}
 
 	var totval = parseInt($iframe.find('#total_students').val());
 	var retval = parseInt($iframe.find('#returning_students').val());
@@ -33,10 +40,11 @@ function updatePrice() {
 	var new_school = $iframe.find('#new_school input:checked').val() || "";
 	var is_school = $iframe.find('#is_school input:checked').val() || "";
 
-	var returning_student_fee = 55;
-	var new_student_fee = 65;
+	var returning_student_fee = window.springEarlyRegistration ? 50 : 55;
+	var new_student_fee = window.springEarlyRegistration ? 60 : 65;
+
 	if (new_school.startsWith('Yes')) {
-		new_student_fee = 75;
+		new_student_fee = window.springEarlyRegistration ? 70 : 75;
 		price += 20;
 	}
 	if (is_school.startsWith('No')) {
