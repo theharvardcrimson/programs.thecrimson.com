@@ -1,3 +1,11 @@
+# plugin configuration
+plugins:
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from
+
+# general site configuration
 organization: The Harvard Crimson
 name: High School Journalism
 address: "14 Plympton Street\nCambridge, MA 02138"
