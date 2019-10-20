@@ -11,6 +11,10 @@
 
         <script type="text/javascript" src="/js/jquery.js"></script>
         <script type="text/javascript" src="/js/scripts.js"></script>
+
+        {% for jsfilename in page.extra_js %}
+            <script type="text/javascript" src="/js/{{ jsfilename }}"></script>
+        {% endfor %}
     </head>
     <body class="blank">
         {{ content }}
