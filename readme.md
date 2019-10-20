@@ -27,4 +27,4 @@
 * Variables such the Crimson's current president are located in **\_config.yaml**, so to get the president's name in a template, write `{{ site.president.name }}`. If you find yourself hardcoding a name, email address, or phone number in a template, consider adding that information to the yaml file and using Liquid instead. This makes it so that updates to the static files only need to happen in one in place, the config file, instead of in 20 different files. TL;DR: Use **\_config.yaml** and Liquid often.
 
 ## Deployment
-This site is deployed with GitHub Pages. Simply push to `master` remotely and ensure the changes are deployed at <https://programs.thecrimson.com>.
+This site is deployed with GitHub Pages. Simply push to `master` remotely and ensure the changes are deployed at <https://old-programs.thecrimson.com>.
