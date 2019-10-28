@@ -31,29 +31,33 @@ function updatePrice() {
 
 	var tot_students = isNaN(totval) ? 0 : totval;
 	var ret_students = isNaN(retval) ? 0 : retval;
+	tot_students = Math.max(tot_students, ret_students);
+
 	var review = $iframe.find('#review input:checked').val() == 'Yes';
 	var new_school = $iframe.find('#new_school input:checked').val() || "";
 	var is_school = $iframe.find('#is_school input:checked').val() || "";
 
-	var price = 35; // Base price is $35
-	if (window.springEarlyRegistration) {
-		price = 25;
+
+
+	var price = 0; // Base price is $0
+	var price = 0;
+
+	var per_student_fee;
+	if (window.fallEarlyRegistration) {
+		if (tot_students >= 5) {
+			per_student_fee = new_school.startsWith('No') ? 70 : 80;
+		} else {
+			per_student_fee = 90;
+		}
+	} else {
+		if (tot_students >= 5) {
+			per_student_fee = new_school.startsWith('No') ? 85 : 100;
+		} else {
+			per_student_fee = 105;
+		}
 	}
 
-	var returning_student_fee = window.springEarlyRegistration ? 50 : 60;
-	var new_student_fee = window.springEarlyRegistration ? 60 : 70;
-
-	if (new_school.startsWith('Yes')) {
-		new_student_fee = window.springEarlyRegistration ? 70 : 80;
-		price += 20;
-	}
-	if (is_school.startsWith('No')) {
-		price = 0;
-	}
-
-	tot_students = Math.max(tot_students, ret_students);
-	price += (tot_students - ret_students) * new_student_fee;
-	price += ret_students * returning_student_fee;
+	price += per_student_fee * tot_students;
 	price += 10*certs + 20*shirts + 30*sweatshirts + 50*packages;
 
 	if (review) {
