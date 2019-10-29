@@ -31,12 +31,10 @@ function updatePrice() {
 
 	var tot_students = isNaN(totval) ? 0 : totval;
 	var ret_students = isNaN(retval) ? 0 : retval;
-	tot_students = Math.max(tot_students, ret_students);
 
 	var review = $iframe.find('#review input:checked').val() == 'Yes';
 	var new_school = $iframe.find('#new_school input:checked').val() || "";
 	var is_school = $iframe.find('#is_school input:checked').val() || "";
-
 
 
 	var price = 0; // Base price is $0
